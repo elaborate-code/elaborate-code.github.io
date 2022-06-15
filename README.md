@@ -31,3 +31,15 @@ Or
 ```text
 npm i && npm run dev && vendor/bin/jigsaw serve
 ```
+
+### browser-sync
+
+```text
+npm install -g browser-sync
+```
+
+```text
+npm run watch
+```
+
+Now live preview the website on `http://localhost:3000`
