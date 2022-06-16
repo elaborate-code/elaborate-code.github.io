@@ -1,7 +1,7 @@
-<x-layout :page="$page">
+@extends('_layouts.main')
 
+@section('body')
     <main class="grid min-h-screen px-2">
-
 
         <div class="place-self-center text-white w-full m-2 p-4 rounded-md shadow-sm text-center">
             <div class="text-center text-5xl">
@@ -29,4 +29,4 @@
         </div>
 
     </main>
-</x-layout>
+@endsection

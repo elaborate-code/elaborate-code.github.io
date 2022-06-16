@@ -1,5 +1,3 @@
-@props(['page'])
-
 <!DOCTYPE html>
 <html lang="{{ $page->language ?? 'en' }}">
 
@@ -16,7 +14,7 @@
 </head>
 
 <body class="bg-primary-1 text-white">
-    {{ $slot }}
+    @yield('body')
 </body>
 
 </html>
