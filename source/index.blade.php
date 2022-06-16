@@ -1,6 +1,5 @@
-@extends('_layouts.main')
+<x-layout :page="$page">
 
-@section('body')
     <main class="grid min-h-screen px-2">
 
 
@@ -24,9 +23,10 @@
                 </span>
             </div>
 
-            <img src="https://media.giphy.com/media/l3nWhI38IWDofyDrW/giphy.gif" alt="" class="w-80 aspect-auto m-auto">
+            <img src="https://media.giphy.com/media/l3nWhI38IWDofyDrW/giphy.gif" alt=""
+                class="w-80 aspect-auto m-auto">
 
         </div>
 
     </main>
-@endsection
+</x-layout>
