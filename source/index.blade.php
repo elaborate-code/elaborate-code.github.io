@@ -10,7 +10,7 @@
 
                 <div class="px-8 md:px-20 xl:px-48">
                     <h1 class="mb-10 text-4xl md:text-5xl xl:text-7xl text-center">
-                        The ultimate <span class="text-[#F22929]"> digitalisation </span> services
+                        The ultimate <span class="text-bloodmyst-isle"> digitalisation </span> services
                         For the ultimate productivity
                     </h1>
 
@@ -20,7 +20,7 @@
                     </p>
 
                     <button
-                        class="block m-auto py-3 px-12 bg-[#F2F2F2] hover:bg-[#262626] hover:shadow-inner text-[#F22929] hover:text-[#A3C4D9] text-lg font-bold rounded-full">
+                        class="block m-auto py-3 px-12 bg-white-smoke hover:bg-firecracker-salmon hover:shadow-inner text-bloodmyst-isle hover:text-nero text-lg font-bold rounded-full">
                         Hire us
                     </button>
                 </div>
