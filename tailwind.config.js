@@ -18,7 +18,7 @@ module.exports = {
                     dark: "#5e0707",
                 },
                 "frozen-blue": {
-                    light: "#dae7f0",
+                    50: "#f6f9fb",
                     DEFAULT: "#A3C4D9",
                     dark: "#1d3748",
                 },

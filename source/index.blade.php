@@ -31,9 +31,30 @@
 
     {{-- <section class="bg-gray-100 h-24"> our partners </section> --}}
 
-    {{-- <section class="bg-white h-96">
+    <section class="py-32 md:py-16 px-12 bg-white">
+
+        <h2 class="mb-12 text-nero text-4xl font-bold text-center"> Our services </h2>
+
+        @foreach ($page->services as $service)
+            <div
+                class="w-full lg:w-[1000px] 2xl:w-[1200px] mx-auto mb-8 flex flex-col-reverse md:even:flex-row-reverse  md:odd:flex-row bg-frozen-blue-50 rounded-3xl">
+
+                <div class="p-4 md:pr-8 lg:pr-16 basis-2/5 flex flex-col justify-center">
+                    <h3 class="mb-5 text-bloodmyst-isle-dark text-3xl"> {{ $service->title }} </h3>
+                    <p class="text-frozen-blue-dark">
+                        {{ $service->description }}
+                    </p>
+                </div>
+
+                <div class="basis-3/5 flex flex-col justify-center">
+                    <img src="{{ $service->img }}" class="object-scale-down rounded-3xl">
+                </div>
+
+            </div>
+        @endforeach
+
 
     </section>
 
-    <section class="bg-gray-50 h-96"></section> --}}
+    <section class="bg-frozen-blue-50 h-96"></section>
 @endsection
