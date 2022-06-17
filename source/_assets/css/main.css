@@ -4,12 +4,30 @@
 
 @layer components {
 
-        .hero-bg {
-          background: linear-gradient(to bottom, #26262688, #26262688  ), url(/assets/images/hero-bg.jpg) no-repeat center center /cover;
-          
-        }
-        .hero-bg-alt {
-            background: linear-gradient(to bottom, #26262688, #26262688  ), url(/assets/images/hero-bg.jpg) no-repeat left bottom  /cover;
-            
-        }   
+    .hero-bg {
+      background: linear-gradient(to bottom, #26262688, #26262688  ), url(/assets/images/hero-bg.jpg) no-repeat center center /cover;
+    }
+    .hero-bg-alt {
+        background: linear-gradient(to bottom, #26262688, #26262688  ), url(/assets/images/hero-bg.jpg) no-repeat left bottom  /cover;    
+    }   
+
+    /* width */
+    ::-webkit-scrollbar {
+        @apply w-2;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        @apply bg-frozen-blue-50;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-full bg-red-500;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-red-600;
+    }
 }
