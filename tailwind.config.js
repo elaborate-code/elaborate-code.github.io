@@ -6,6 +6,11 @@ module.exports = {
     ]),
     theme: {
         extend: {
+            fontFamily: {
+                raleway: ["Raleway", "sans-serif"],
+                merriweather: ["Merriweather Sans", "sans-serif"],
+                "yeseva-one": ["Yeseva One", "cursive"],
+            },
             colors: {
                 "bloodmyst-isle": {
                     light: "#fccece",

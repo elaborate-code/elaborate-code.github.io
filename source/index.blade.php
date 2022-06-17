@@ -9,7 +9,7 @@
             <div class="flex-1 flex flex-col justify-center">
 
                 <div class="px-8 md:px-20 xl:px-48">
-                    <h1 class="mb-10 text-4xl md:text-5xl xl:text-7xl text-center">
+                    <h1 class="mb-10 text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center">
                         The ultimate <span class="text-bloodmyst-isle"> digitalisation </span> services
                         For the ultimate productivity
                     </h1>
@@ -33,14 +33,14 @@
 
     <section class="py-32 md:py-16 px-12 bg-white">
 
-        <h2 class="mb-12 text-nero text-4xl font-bold text-center"> Our services </h2>
+        <h2 class="mb-12 text-nero text-4xl font-bold   text-center"> Our services </h2>
 
         @foreach ($page->services as $service)
             <div
                 class="w-full lg:w-[1000px] 2xl:w-[1200px] mx-auto mb-8 flex flex-col-reverse md:even:flex-row-reverse  md:odd:flex-row justify-between bg-frozen-blue-50 rounded-3xl">
 
                 <div class="p-4 md:pr-8 lg:pr-16 basis-2/5 flex flex-col justify-center">
-                    <h3 class="mb-5 text-bloodmyst-isle-dark text-3xl"> {{ $service->title }} </h3>
+                    <h3 class="mb-5 text-bloodmyst-isle-dark text-3xl font-merriweather"> {{ $service->title }} </h3>
                     <p class="text-frozen-blue-dark">
                         {{ $service->description }}
                     </p>
