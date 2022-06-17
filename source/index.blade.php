@@ -1,33 +1,39 @@
 @extends('_layouts.main')
 
 @section('body')
-    <main class="grid min-h-screen px-2">
+    <section class="h-screen hero-bg sm:hero-bg-alt text-white">
+        <div class="container h-full m-auto flex flex-col">
 
-        <div id="particles-js"></div>
+            <nav class="h-20 bg-white opacity-10"></nav>
 
-        <div class="place-self-center text-white w-full m-2 p-4 rounded-md shadow-sm text-center">
-            <div class="text-center text-5xl">
-                Elaborate Code
+            <div class="flex-1 flex flex-col justify-center">
+
+                <div class="px-8 md:px-20 xl:px-48">
+                    <h1 class="mb-10 text-4xl md:text-5xl xl:text-7xl text-center">
+                        The ultimate <span class="text-[#F22929]"> digitalisation </span> services
+                        For the ultimate productivity
+                    </h1>
+
+                    <p class="mb-8 md:px-20 lg:px-36 text-xl text-center">
+                        Our team is skilled and love their work and are ready to channel their energy toward understanding
+                        the needs of your team and help them upgrade their workflows doing the things they love
+                    </p>
+
+                    <button
+                        class="block m-auto py-3 px-12 bg-[#F2F2F2] hover:bg-[#262626] hover:shadow-inner text-[#F22929] hover:text-[#A3C4D9] text-lg font-bold rounded-full">
+                        Hire us
+                    </button>
+                </div>
             </div>
-
-            <div class="text-center text-secondary-1">
-                @medilies
-            </div>
-
-            <div class="my-4 p-2 text-3xl">
-                <span class="font-bold">
-                    Coming
-                </span>
-
-                <span
-                    class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary-2 relative inline-block">
-                    <span class="relative text-white"> SOON </span>
-                </span>
-            </div>
-
-            <img src="https://media.giphy.com/media/l3nWhI38IWDofyDrW/giphy.gif" alt="" class="w-80 aspect-auto m-auto">
 
         </div>
+    </section>
 
-    </main>
+    {{-- <section class="bg-gray-100 h-24"> our partners </section> --}}
+
+    {{-- <section class="bg-white h-96">
+
+    </section>
+
+    <section class="bg-gray-50 h-96"></section> --}}
 @endsection

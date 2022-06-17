@@ -13,7 +13,7 @@
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </head>
 
-<body class="bg-primary-1 text-white">
+<body class="">
     @yield('body')
 </body>
 

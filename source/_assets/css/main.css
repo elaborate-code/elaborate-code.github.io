@@ -1,3 +1,20 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components {
+
+        .hero-bg {
+          background: linear-gradient(to bottom, #0008, #0008  ), url(/assets/images/hero-bg.jpg) no-repeat center center /cover;
+          
+        }
+        .hero-bg-alt {
+            background: linear-gradient(to bottom, #0008, #0008  ), url(/assets/images/hero-bg.jpg) no-repeat left bottom  /cover;
+            
+        }
+
+        .text-shadow-1{
+            text-shadow: 1px 1px 1px #FF241A;
+        }
+    
+}

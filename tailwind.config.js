@@ -6,12 +6,9 @@ module.exports = {
     ]),
     theme: {
         extend: {
-            colors: {
-                "primary-1": "#103778",
-                "primary-2": "#151F30",
-                "secondary-1": "#FF7A48",
-                "secondary-2": "#E3371E",
-                terciary: "#0593A2",
+            colors: {},
+            backgroundImage: {
+                "hero-image": "url('/assets/images/hero-bg.jpg')",
             },
         },
     },
