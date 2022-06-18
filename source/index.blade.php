@@ -1,95 +1,111 @@
 @extends('_layouts.main')
 
 @section('body')
-    <section class="h-screen hero-bg sm:hero-bg-alt text-white">
-        <div class="container h-full mx-auto flex flex-col">
+    <nav class="h-20 absolute top-0 w-full"></nav>
 
-            <nav class="h-20 "></nav>
+    <main class="scroll-smooth">
 
-            <header class="-mt-16 flex-1 flex flex-col justify-center">
+        <section name="hero section" class="h-screen hero-bg sm:hero-bg-alt">
+            <header class="container h-full mx-auto flex flex-col text-white">
 
-                <div class="px-8 md:px-20 xl:px-48">
-                    <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center">
-                        The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
-                        For the ultimate productivity
-                    </h1>
+                <div class="-mt-16 flex-1 flex flex-col justify-center">
 
-                    <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
+                    <div class="px-8 md:px-20 xl:px-48">
+                        <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center">
+                            The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
+                            For the ultimate productivity
+                        </h1>
 
-                    <p class="mb-8 md:px-20 lg:px-36 text-xl text-center">
-                        Achieve more by adopting automated workflows and networking informations between the various
-                        segments of your company
-                    </p>
+                        <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
+
+                        <p class="mb-8 md:px-20 lg:px-36 text-xl text-center">
+                            Achieve more by adopting automated workflows and networking informations between the various
+                            segments of your company
+                        </p>
+
+                        <button
+                            class="block m-auto py-3 px-12 bg-white-smoke hover:bg-firecracker-salmon hover:shadow-inner text-bloodmyst-isle hover:text-nero text-lg font-bold rounded-full">
+                            Hire us
+                        </button>
+                    </div>
+                </div>
+
+            </header>
+        </section>
+
+        {{-- <section name="Clients and partners" class="bg-gray-100 h-24"> our partners/clients </section> --}}
+
+        <section name="Who are we" class="sticky top-0 -z-10 p-10 md:py-16 md:px-12 bg-white-smoke">
+
+            <h2 class="mb-6 text-bloodmyst-isle text-4xl font-bold font-yeseva-one text-center"> Who are we</h2>
+
+            <p class="w-full sm:w-96 mx-auto text-center">
+                We are a team of passionate IT people, we mainly craft on-demand web APPs (CMS, ERP, CRM, IOT, E-Commerce
+                ...)
+                and websites. We also offer infrastructure upgrade services like setting up Windows/Linux server with its
+                services and optimize networks physically and logically
+            </p>
+        </section>
+
+        <section name="Our services" class="bg-white">
+
+            <div class="container mx-auto py-10 px-4 md:py-16 md:px-6">
+
+
+                <h2 class="mb-12 text-nero text-4xl font-bold font-yeseva-one text-center"> Our services </h2>
+
+                @foreach ($page->services as $service)
+                    <x-cards.service :service="$service" />
+                @endforeach
+            </div>
+        </section>
+
+        <section name="CTA" class="bg-bloodmyst-isle-dark py-10 px-4">
+            <h2 class="mb-4 text-bloodmyst-isle text-4xl font-bold font-merriweather text-center"> Are you intrested in our
+                services ? </h2>
+
+            <p class="mb-2 text-white text-center">
+                Let us know your E-mail and phone number and we will reach out to you
+            </p>
+
+            {{-- https://formsubmit.co/ajax-documentation --}}
+            <form action="https://formsubmit.co/ee12d2b34596e814d47702339907bd3e" method="POST">
+                <div class="flex flex-col justify-center items-center md:flex-row gap-4 text-lg font-merriweather">
+
+                    <input type="hidden" name="_subject" value="Elaborate Code service request">
+                    <input type="hidden" name="_template" value="table">
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://elaboratecode.com{{ $page->getUrl() }}">
+                    {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
+
+                    <input type="email" name="email" placeholder="email" required
+                        class="w-72 h-14 px-4 outline-none border-none rounded-sm">
+
+                    <input type="tel" name="phone" placeholder="phone" required
+                        class="w-54 h-14 px-4 outline-none border-none rounded-sm">
 
                     <button
-                        class="block m-auto py-3 px-12 bg-white-smoke hover:bg-firecracker-salmon hover:shadow-inner text-bloodmyst-isle hover:text-nero text-lg font-bold rounded-full">
-                        Hire us
-                    </button>
+                        class="h-14 w-36 bg-bloodmyst-isle text-frozen-blue-50 font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
+                        Send </button>
                 </div>
-            </header>
+            </form>
 
-        </div>
-    </section>
+            <a class="block mt-2 cursor-pointer text-firecracker-salmon text-xs text-center underline"> Or send us a
+                detailed message </a>
+        </section>
 
-    {{-- <section class="bg-gray-100 h-24"> our partners </section> --}}
+        <section name="Featured project" class="bg-frozen-blue-50 h-96">
 
-    <section class="p-10 md:py-16 md:px-12 bg-white-smoke">
-
-        <h2 class="mb-6 text-bloodmyst-isle text-4xl font-bold font-yeseva-one text-center"> Who are we</h2>
-
-        <p class="w-full sm:w-96 mx-auto text-center">
-            We are a team of passionate IT people, we mainly craft on-demand web APPs (CMS, ERP, CRM, IOT, E-Commerce ...)
-            and websites. We also offer infrastructure upgrade services like setting up Windows/Linux server with its
-            services and optimize networks physically and logically
-        </p>
-    </section>
-
-    <section class="py-10 px-4 md:py-16 md:px-12 bg-white">
-
-        <h2 class="mb-12 text-nero text-4xl font-bold font-yeseva-one text-center"> Our services </h2>
-
-        @foreach ($page->services as $service)
-            <x-cards.service :service="$service" />
-        @endforeach
+            <div class="container mx-auto py-10 px-4 md:py-16 md:px-6">
 
 
-    </section>
+                <h2 class="mb-12 text-nero text-4xl font-bold font-yeseva-one text-center"> Our Featured projects </h2>
 
-    <section class="bg-bloodmyst-isle-dark py-10 px-4">
-        <h2 class="mb-4 text-bloodmyst-isle text-4xl font-bold font-merriweather text-center"> Are you intrested in our
-            services ? </h2>
-
-        <p class="mb-2 text-white text-center">
-            Let us know your E-mail and phone number and we will reach out to you
-        </p>
-
-        {{-- https://formsubmit.co/ajax-documentation --}}
-        <form action="https://formsubmit.co/ee12d2b34596e814d47702339907bd3e" method="POST">
-            <div class="flex flex-col justify-center items-center md:flex-row gap-4 text-lg font-merriweather">
-
-                <input type="hidden" name="_subject" value="Elaborate Code service request">
-                <input type="hidden" name="_template" value="table">
-
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_next" value="https://elaboratecode.com{{ $page->getUrl() }}">
-                {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
-
-                <input type="email" name="email" placeholder="email" required
-                    class="w-72 h-14 px-4 outline-none border-none rounded-sm">
-
-                <input type="tel" name="phone" placeholder="phone" required
-                    class="w-54 h-14 px-4 outline-none border-none rounded-sm">
-
-                <button
-                    class="h-14 w-36 bg-bloodmyst-isle text-frozen-blue-50 font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
-                    Send </button>
             </div>
-        </form>
-    </section>
-
-    <section class="bg-frozen-blue-50 h-96">
-    </section>
+        </section>
+    </main>
 
     <footer class="bg-nero">
         <div class="py-4 text-white-smoke text-center">
