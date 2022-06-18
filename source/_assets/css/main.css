@@ -12,7 +12,7 @@
     }
 
     .card{
-        @apply bg-frozen-blue-50 rounded-3xl shadow-xl border md:bg-inherit md:shadow-none md:border-none md:hover:bg-frozen-blue-50 md:hover:scale-105 md:hover:shadow-xl md:hover:border;
+        @apply bg-frozen-blue-50 rounded-3xl shadow-xl border md:shadow-none md:hover:scale-105 md:hover:shadow-xl md:hover:border;
     }
 
     /* width */
