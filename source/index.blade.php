@@ -6,17 +6,19 @@
 
             <nav class="h-20 bg-white opacity-10"></nav>
 
-            <div class="flex-1 flex flex-col justify-center">
+            <header class="flex-1 flex flex-col justify-center">
 
                 <div class="px-8 md:px-20 xl:px-48">
-                    <h1 class="mb-10 text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center">
-                        The ultimate <span class="text-bloodmyst-isle"> digitalisation </span> services
+                    <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center">
+                        The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
                         For the ultimate productivity
                     </h1>
 
+                    <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
+
                     <p class="mb-8 md:px-20 lg:px-36 text-xl text-center">
-                        Our team is skilled and love their work and are ready to channel their energy toward understanding
-                        the needs of your team and help them upgrade their workflows doing the things they love
+                        Achieve more by adopting automated workflows and networking informations between the various
+                        segments of your company
                     </p>
 
                     <button
@@ -24,7 +26,7 @@
                         Hire us
                     </button>
                 </div>
-            </div>
+            </header>
 
         </div>
     </section>
@@ -33,26 +35,11 @@
 
     <section class="py-32 md:py-16 px-12 bg-white">
 
-        <h2 class="mb-12 text-nero text-4xl font-bold   text-center"> Our services </h2>
+        <h2 class="mb-12 text-nero text-4xl font-bold font-yeseva-one text-center"> Our services </h2>
 
         @foreach ($page->services as $service)
-            <div
-                class="w-full lg:w-[1000px] 2xl:w-[1200px] mx-auto mb-8 flex flex-col-reverse md:even:flex-row-reverse  md:odd:flex-row justify-between bg-frozen-blue-50 rounded-3xl">
-
-                <div class="p-4 md:pr-8 lg:pr-16 basis-2/5 flex flex-col justify-center">
-                    <h3 class="mb-5 text-bloodmyst-isle-dark text-3xl font-merriweather"> {{ $service->title }} </h3>
-                    <p class="text-frozen-blue-dark">
-                        {{ $service->description }}
-                    </p>
-                </div>
-
-                <div class="w-full md:w-[450px] lg:w-[640px] flex flex-col justify-center">
-                    <img src="{{ $service->img }}" class="object-scale-down rounded-3xl">
-                </div>
-
-            </div>
+            <x-cards.service :service="$service" />
         @endforeach
-
 
     </section>
 
