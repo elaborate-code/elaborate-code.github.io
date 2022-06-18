@@ -25,7 +25,7 @@
 
                         <button
                             class="block m-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-full">
-                            Hire us
+                            Request a service
                         </button>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                 services ? </h2>
 
             <p class="mb-2 text-white text-center">
-                Let us know your E-mail and phone number and we will reach out to you
+                Let us know your E-mail and phone number and we will reach out to you shortly
             </p>
 
             {{-- https://formsubmit.co/ajax-documentation --}}
@@ -92,9 +92,9 @@
                 </div>
             </form>
 
-            <a class="block mt-2 cursor-pointer text-firecracker-salmon-light text-xs text-center underline" href="#">
-                Or send us a
-                detailed message </a>
+            <a class="block mt-4 cursor-pointer text-firecracker-salmon-light text-sm text-center underline" href="#">
+                Or send us a detailed message
+            </a>
         </section>
 
         <section name="Featured project" class="bg-frozen-blue-50 h-96">
