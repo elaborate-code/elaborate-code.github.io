@@ -60,11 +60,13 @@
             services ? </h2>
 
         <p class="mb-2 text-white text-center">
-            Let us know your E-mail or phone number and we will reach out to you
+            Let us know your E-mail and phone number and we will reach out to you
         </p>
 
+        {{-- https://formsubmit.co/ajax-documentation --}}
         <form action="https://formsubmit.co/ee12d2b34596e814d47702339907bd3e" method="POST">
-            <div class="flex flex-col justify-center items-center sm:flex-row gap-4 text-lg">
+            <div class="flex flex-col justify-center items-center md:flex-row gap-4 text-lg font-merriweather">
+
                 <input type="hidden" name="_subject" value="Elaborate Code service request">
                 <input type="hidden" name="_template" value="table">
 
@@ -73,10 +75,14 @@
                 <input type="hidden" name="_next" value="https://elaboratecode.com{{ $page->getUrl() }}">
                 {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
 
-                <input type="text" name="message" class="w-72 h-14 px-4 outline-none border-none rounded-sm">
+                <input type="email" name="email" placeholder="email" required
+                    class="w-72 h-14 px-4 outline-none border-none rounded-sm">
+
+                <input type="tel" name="phone" placeholder="phone" required
+                    class="w-54 h-14 px-4 outline-none border-none rounded-sm">
 
                 <button
-                    class="h-14 px-16 bg-bloodmyst-isle text-frozen-blue-50 font-bold rounded-sm shadow-sm hover:shadow-white-smoke">
+                    class="h-14 w-36 bg-bloodmyst-isle text-frozen-blue-50 font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
                     Send </button>
             </div>
         </form>
