@@ -84,10 +84,10 @@
                         class="w-72 h-14 px-4 outline-none border-none rounded-sm">
 
                     <input type="tel" name="phone" placeholder="phone" required
-                        class="w-54 h-14 px-4 outline-none border-none rounded-sm">
+                        class="w-56 h-14 px-4 outline-none border-none rounded-sm">
 
                     <button
-                        class="h-14 w-36 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
+                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
                         Send </button>
                 </div>
             </form>
