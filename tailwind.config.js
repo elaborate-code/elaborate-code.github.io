@@ -14,7 +14,11 @@ module.exports = {
             colors: {
                 "bloodmyst-isle": {
                     light: "#fccece",
+                    200: "#f99e9e",
+                    300: "#f66e6e",
                     DEFAULT: "#F22929",
+                    600: "#f00e0e",
+                    700: "#c00b0b",
                     dark: "#600505",
                 },
                 "firecracker-salmon": {

@@ -24,7 +24,7 @@
                         </p>
 
                         <button
-                            class="block m-auto py-3 px-12 bg-white-smoke hover:bg-firecracker-salmon hover:shadow-inner text-bloodmyst-isle hover:text-nero text-lg font-bold rounded-full">
+                            class="block m-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-full">
                             Hire us
                         </button>
                     </div>
@@ -77,7 +77,7 @@
 
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_next" value="https://elaboratecode.com{{ $page->getUrl() }}">
+                    <input type="hidden" name="_next" value="{{ $page->getUrl() }}">
                     {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
 
                     <input type="email" name="email" placeholder="email" required
@@ -87,12 +87,13 @@
                         class="w-54 h-14 px-4 outline-none border-none rounded-sm">
 
                     <button
-                        class="h-14 w-36 bg-bloodmyst-isle text-frozen-blue-50 font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
+                        class="h-14 w-36 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
                         Send </button>
                 </div>
             </form>
 
-            <a class="block mt-2 cursor-pointer text-firecracker-salmon text-xs text-center underline"> Or send us a
+            <a class="block mt-2 cursor-pointer text-firecracker-salmon-light text-xs text-center underline" href="#">
+                Or send us a
                 detailed message </a>
         </section>
 

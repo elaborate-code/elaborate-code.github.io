@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => 'https://elaboratecode.com',
     'title' => 'Elaborate code',
     'description' => 'It solutions company',
     'collections' => [],
