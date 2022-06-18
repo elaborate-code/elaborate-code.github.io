@@ -2,11 +2,11 @@
 
 @section('body')
     <section class="h-screen hero-bg sm:hero-bg-alt text-white">
-        <div class="container h-full m-auto flex flex-col">
+        <div class="container h-full mx-auto flex flex-col">
 
             <nav class="h-20 "></nav>
 
-            <header class="flex-1 flex flex-col justify-center">
+            <header class="-mt-16 flex-1 flex flex-col justify-center">
 
                 <div class="px-8 md:px-20 xl:px-48">
                     <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center">
@@ -33,18 +33,18 @@
 
     {{-- <section class="bg-gray-100 h-24"> our partners </section> --}}
 
-    <section class="py-16 px-12 bg-white-smoke">
+    <section class="p-10 md:py-16 md:px-12 bg-white-smoke">
 
         <h2 class="mb-6 text-bloodmyst-isle text-4xl font-bold font-yeseva-one text-center"> Who are we</h2>
 
-        <p class="w-96 mx-auto text-center">
+        <p class="w-full sm:w-96 mx-auto text-center">
             We are a team of passionate IT people, we mainly craft on-demand web APPs (CMS, ERP, CRM, IOT, E-Commerce ...)
             and websites. We also offer infrastructure upgrade services like setting up Windows/Linux server with its
             services and optimize networks physically and logically
         </p>
     </section>
 
-    <section class="py-10 md:py-16 px-12 bg-white">
+    <section class="py-10 px-4 md:py-16 md:px-12 bg-white">
 
         <h2 class="mb-12 text-nero text-4xl font-bold font-yeseva-one text-center"> Our services </h2>
 
@@ -63,11 +63,11 @@
         </p>
 
         <form method="post">
-            <div class="flex justify-center items-stretch gap-4 text-lg">
-                <input type="text" class="w-72 px-4 outline-none border-none rounded-sm">
+            <div class="flex flex-col justify-center items-center sm:flex-row gap-4 text-lg">
+                <input type="text" class="w-72 h-14 px-4 outline-none border-none rounded-sm">
 
                 <button
-                    class="px-16 py-4 bg-bloodmyst-isle text-frozen-blue-50 font-bold rounded-sm shadow-sm hover:shadow-white-smoke">
+                    class="h-14 px-16 bg-bloodmyst-isle text-frozen-blue-50 font-bold rounded-sm shadow-sm hover:shadow-white-smoke">
                     Send </button>
             </div>
         </form>

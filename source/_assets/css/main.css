@@ -9,7 +9,11 @@
     }
     .hero-bg-alt {
         background: linear-gradient(to bottom, #26262688 75%, #ccc8  ), url(/assets/images/hero-bg.jpg) no-repeat left bottom  /cover;    
-    }   
+    }
+
+    .card{
+        @apply bg-frozen-blue-50 rounded-3xl shadow-xl border md:bg-inherit md:shadow-none md:border-none md:hover:bg-frozen-blue-50 md:hover:scale-105 md:hover:shadow-xl md:hover:border;
+    }
 
     /* width */
     ::-webkit-scrollbar {
