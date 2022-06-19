@@ -23,10 +23,10 @@
                             segments of your company
                         </p>
 
-                        <button
-                            class="block m-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-full">
+                        <a href="#cta"
+                            class="block w-fit mx-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-full">
                             Request a service
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section name="CTA" class="bg-bloodmyst-isle-dark py-10 px-4">
+        <section name="CTA" id="cta" class="bg-bloodmyst-isle-dark py-10 px-4">
             <h2 class="mb-4 text-bloodmyst-isle text-4xl font-bold font-merriweather text-center"> Are you intrested in our
                 services ? </h2>
 
@@ -81,13 +81,13 @@
                     {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
 
                     <input type="email" name="email" placeholder="email" required
-                        class="w-72 h-14 px-4 outline-none border-none rounded-sm">
+                        class="w-72 h-14 px-4 outline-none border-none rounded-full">
 
                     <input type="tel" name="phone" placeholder="phone" required
-                        class="w-56 h-14 px-4 outline-none border-none rounded-sm">
+                        class="w-56 h-14 px-4 outline-none border-none rounded-full">
 
                     <button
-                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
+                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-full shadow-sm hover:shadow-white-smoke">
                         Send </button>
                 </div>
             </form>
