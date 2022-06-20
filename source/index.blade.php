@@ -103,11 +103,14 @@
                 Our Featured projects
             </h2>
 
-            <x-eazyip-showcase />
+            <div class="flex flex-wrap justify-around container mx-auto">
+                <x-eazyip-showcase />
+                <x-eazyip-showcase />
+            </div>
 
         </section>
 
-        <div class="h-32 bg-frozen-blue-dark">
+        <div class="h-32 bg-firecracker-salmon-light">
 
         </div>
     </main>
