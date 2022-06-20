@@ -1,7 +1,12 @@
 @extends('_layouts.main')
 
 @section('body')
-    <nav class="h-20 absolute top-0 w-full"></nav>
+    <nav class="absolute top-0 w-full">
+        <div class="container mx-auto p-4 text-center">
+            <x-logo class="h-9 mx-auto text-white" />
+            <p class="text-white">Elaborate Code</p>
+        </div>
+    </nav>
 
     <main class="scroll-smooth">
 
