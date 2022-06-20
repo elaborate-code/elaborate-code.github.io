@@ -81,13 +81,13 @@
                     {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
 
                     <input type="email" name="email" placeholder="email" required
-                        class="w-72 h-14 px-4 outline-none border-none rounded-full">
+                        class="w-72 h-14 px-4 outline-none border-none rounded-sm">
 
                     <input type="tel" name="phone" placeholder="phone" required
-                        class="w-56 h-14 px-4 outline-none border-none rounded-full">
+                        class="w-56 h-14 px-4 outline-none border-none rounded-sm">
 
                     <button
-                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-full shadow-sm hover:shadow-white-smoke">
+                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
                         Send </button>
                 </div>
             </form>
@@ -97,15 +97,19 @@
             </a>
         </section>
 
-        <section name="Featured project" class="bg-frozen-blue-50 h-96">
+        <section name="Featured project" class="py-8 bg-white">
 
-            <div class="container mx-auto py-10 px-4 md:py-16 md:px-6">
+            <h2 class="mb-6 px-4 md:px-6 text-nero text-4xl font-bold font-yeseva-one text-center">
+                Our Featured projects
+            </h2>
 
+            <x-eazyip-showcase />
 
-                <h2 class="mb-12 text-nero text-4xl font-bold font-yeseva-one text-center"> Our Featured projects </h2>
-
-            </div>
         </section>
+
+        <div class="h-32 bg-frozen-blue-dark">
+
+        </div>
     </main>
 
     <footer class="bg-nero">
