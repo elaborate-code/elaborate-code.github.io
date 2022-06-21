@@ -19,6 +19,7 @@ module.exports = {
                     DEFAULT: "#F22929",
                     600: "#f00e0e",
                     700: "#c00b0b",
+                    800: "#900808",
                     dark: "#600505",
                 },
                 "firecracker-salmon": {

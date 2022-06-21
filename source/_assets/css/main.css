@@ -35,4 +35,21 @@
     ::-webkit-scrollbar-thumb:hover {
         @apply bg-red-600;
     }
+
+    .project-card > div {
+        @apply bg-white-smoke text-white-smoke;
+    }
+    .project-card:nth-child(odd) h3 {
+        @apply from-frozen-blue-dark via-frozen-blue-dark to-frozen-blue-800;
+    }
+    .project-card:nth-child(odd) p {
+        @apply border-frozen-blue-dark text-frozen-blue-dark border;
+    }
+
+    .project-card:nth-child(even) h3 {
+        @apply from-bloodmyst-isle-dark via-bloodmyst-isle-dark to-bloodmyst-isle-800;
+    }
+    .project-card:nth-child(even) p {
+        @apply border-bloodmyst-isle-dark text-bloodmyst-isle-dark border;
+    }
 }
