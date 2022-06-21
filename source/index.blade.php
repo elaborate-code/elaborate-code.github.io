@@ -109,8 +109,12 @@
             </h2>
 
             <div class="flex flex-wrap justify-center gap-12 container mx-auto">
-                <x-eazyip-showcase />
-                <x-eazyip-showcase-alt />
+
+                @foreach ($page->projects as $project)
+                    <x-cards.project :project="$project" />
+                @endforeach
+
+                <x-cards.project2 :project="$page->projects[0]" />
             </div>
 
         </section>
