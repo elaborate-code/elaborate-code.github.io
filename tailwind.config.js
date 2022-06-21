@@ -29,6 +29,7 @@ module.exports = {
                 "frozen-blue": {
                     50: "#f6f9fb",
                     DEFAULT: "#A3C4D9",
+                    800: "#2c536c",
                     dark: "#1d3748",
                 },
                 nero: {
@@ -40,6 +41,7 @@ module.exports = {
             },
             backgroundImage: {
                 "hero-image": "url('/assets/images/hero-bg.jpg')",
+                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
             },
         },
     },

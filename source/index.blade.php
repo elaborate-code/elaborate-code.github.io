@@ -108,7 +108,7 @@
                 Our Featured projects
             </h2>
 
-            <div class="flex flex-wrap justify-around container mx-auto">
+            <div class="flex flex-wrap justify-center gap-12 container mx-auto">
                 <x-eazyip-showcase />
                 <x-eazyip-showcase />
             </div>
