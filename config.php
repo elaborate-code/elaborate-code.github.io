@@ -33,10 +33,5 @@ return [
             'desc' => 'Eazy IP is a Progressive Web App that aims at becoming an essensial toolkit for the network engineers by handling the IP operations flawlessly',
             'img' => 'assets/images/eazyip-ladingpage-mockups-min.png',
         ],
-        [
-            'name' => 'Eazy IP',
-            'desc' => 'Eazy IP is a Progressive Web App that aims at becoming an essensial toolkit for the network engineers by handling the IP operations flawlessly',
-            'img' => 'assets/images/eazyip-ladingpage-mockups-min.png',
-        ],
     ],
 ];

@@ -111,10 +111,9 @@
             <div class="flex flex-wrap justify-center gap-12 container mx-auto">
 
                 @foreach ($page->projects as $project)
-                    <x-cards.project :project="$project" />
+                    <x-cards.project :project="$project" {{-- class="{{ $loop->even ? 'project-card-frozen-blue-theme' : 'project-card-bloodmyst-isle-theme' }}" /> --}}
+                        class="{{ true ? 'project-card-frozen-blue-theme' : 'project-card-bloodmyst-isle-theme' }}" />
                 @endforeach
-
-                <x-cards.project2 :project="$page->projects[0]" />
             </div>
 
         </section>

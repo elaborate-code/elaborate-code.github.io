@@ -37,19 +37,18 @@
     }
 
     .project-card > div {
-        @apply bg-white-smoke text-white-smoke;
+        @apply bg-white text-white;
     }
-    .project-card:nth-child(odd) h3 {
-        @apply from-frozen-blue-dark via-frozen-blue-dark to-frozen-blue-800;
+    .project-card-frozen-blue-theme h3 {
+        @apply from-frozen-blue-dark via-frozen-blue-dark to-frozen-blue-800 text-white;
     }
-    .project-card:nth-child(odd) p {
-        @apply border-frozen-blue-dark text-frozen-blue-dark border;
+    .project-card-frozen-blue-theme p {
+        @apply border-frozen-blue-dark text-frozen-blue-dark border hover:text-black;
     }
-
-    .project-card:nth-child(even) h3 {
-        @apply from-bloodmyst-isle-dark via-bloodmyst-isle-dark to-bloodmyst-isle-800;
+    .project-card-bloodmyst-isle-theme h3 {
+        @apply from-bloodmyst-isle-dark via-bloodmyst-isle-dark to-bloodmyst-isle-800 text-white;
     }
-    .project-card:nth-child(even) p {
-        @apply border-bloodmyst-isle-dark text-bloodmyst-isle-dark border;
+    .project-card-bloodmyst-isle-theme p {
+        @apply border-bloodmyst-isle-dark text-bloodmyst-isle-dark border hover:text-black;
     }
 }
