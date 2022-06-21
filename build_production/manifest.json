@@ -1,7 +1,9 @@
 {
+    "start_url": "/",
     "name": "Elaborate Code",
     "short_name": "elaboratecode",
-    "start_url": "/",
+    "theme_color": "#f22929",
+    "background_color": "#f22929",
     "icons": [
         {
             "src": "/assets/favicons/android-chrome-192x192.png",
