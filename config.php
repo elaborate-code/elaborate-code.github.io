@@ -31,7 +31,14 @@ return [
         [
             'name' => 'Eazy IP',
             'desc' => 'Eazy IP is a Progressive Web App that aims at becoming an essensial toolkit for the network engineers by handling the IP operations flawlessly',
+            'href' => 'https://eazyip.github.io/',
             'img' => 'assets/images/eazyip-ladingpage-mockups-min.png',
+        ],
+        [
+            'name' => 'Darlink',
+            'desc' => 'Darlink is a multi-user home automation full fledged IOT platform that enables functionalities like sensors monitoring and remote actions',
+            'href' => '#',
+            'img' => 'assets/images/darlink-min.png',
         ],
     ],
 ];
