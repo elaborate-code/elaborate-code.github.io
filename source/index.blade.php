@@ -13,7 +13,7 @@
         <section name="hero section" class="h-screen hero-bg sm:hero-bg-alt">
             <header class="container h-full mx-auto flex flex-col text-white">
 
-                <div class="-mt-[5%] flex-1 flex flex-col justify-center">
+                <div class="flex-1 flex flex-col justify-center">
 
                     <div class="px-8 md:px-20 xl:px-48">
                         <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center">
@@ -105,7 +105,7 @@
         <section name="Featured project" class="py-8 bg-white">
 
             <h2 class="mb-6 px-4 md:px-6 text-nero text-4xl font-bold font-yeseva-one text-center">
-                Our Featured projects
+                Our Featured applications
             </h2>
 
             <div class="flex flex-wrap justify-center gap-12 container mx-auto">
