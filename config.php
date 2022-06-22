@@ -32,19 +32,25 @@ return [
             'name' => 'Eazy IP',
             'desc' => 'Eazy IP is a Progressive Web App that aims at becoming an essensial toolkit for the network engineers by handling the IP operations flawlessly',
             'href' => 'https://eazyip.github.io/',
-            'img' => 'assets/images/eazyip-ladingpage-mockups-min.png',
+            'img' => '/assets/images/eazyip-ladingpage-mockups-min.png',
         ],
         [
             'name' => 'Darlink',
             'desc' => 'Darlink is a multi-user home automation IOT platform that enables functionalities like realtime sensors monitoring and remote actions',
             'href' => '#',
-            'img' => 'assets/images/darlink-min.png',
+            'img' => '/assets/images/darlink-min.png',
         ],
         [
             'name' => 'School Scope',
             'desc' => 'School Scope is a SAAS destined for fully managing the algerian elementary, middle and high schools',
             'href' => '#',
-            'img' => 'assets/images/School-Scope-min-min.png',
+            'img' => '/assets/images/school-scope-min-min.png',
+        ],
+        [
+            'name' => 'Residencily',
+            'desc' => 'Residencily manages block apartements records and their sale process',
+            'href' => '#',
+            'img' => 'https://via.placeholder.com/320x180/F2F2F2/600505?text=RESIDENCILY',
         ],
     ],
 ];
