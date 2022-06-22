@@ -10,7 +10,7 @@
         </h3>
 
         <a href="{{ $project->href }}" target="__blank"
-            class="block w-full mx-auto p-2 md:mx-auto hover:rotate-2 transition ease-in-out delay-75 duration-150">
+            class="block w-full mx-auto p-2 md:mx-auto group-hover:rotate-2 transition ease-in-out delay-75 duration-150">
             <img src="{{ $project->img }}" alt="Eazy IP Web app showcase mockup" srcset="" class="object-fill">
         </a>
 
