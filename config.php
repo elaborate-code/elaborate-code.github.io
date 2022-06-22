@@ -36,9 +36,15 @@ return [
         ],
         [
             'name' => 'Darlink',
-            'desc' => 'Darlink is a multi-user home automation full fledged IOT platform that enables functionalities like sensors monitoring and remote actions',
+            'desc' => 'Darlink is a multi-user home automation IOT platform that enables functionalities like realtime sensors monitoring and remote actions',
             'href' => '#',
             'img' => 'assets/images/darlink-min.png',
+        ],
+        [
+            'name' => 'School Scope',
+            'desc' => 'School Scope is a SAAS destined for fully managing the algerian elementary, middle and high schools',
+            'href' => '#',
+            'img' => 'assets/images/School-Scope-min-min.png',
         ],
     ],
 ];

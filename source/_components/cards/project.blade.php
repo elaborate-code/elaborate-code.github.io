@@ -5,7 +5,7 @@
         class="relative w-72 h-80 mx-auto pt-10 pb-28 px-2 bg-frozen-blue-50 text-frozen-blue-50 shadow-lg rounded-3xl hover:shadow-xl">
 
         <h3
-            class="absolute -top-5 -left-3 w-32 p-2 bg-gradient-radial rounded-r-3xl rounded-l-sm text-2xl font-merriweather text-center">
+            class="absolute -top-5 -left-3 p-2 bg-gradient-radial rounded-r-3xl rounded-l-sm text-2xl font-merriweather text-center">
             {{ $project->name }}
         </h3>
 
