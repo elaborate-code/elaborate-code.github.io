@@ -1,4 +1,4 @@
-@props(['project'])
+@props(['projectName', 'projectImg', 'projectDesc', 'projectHref'])
 
 <div {{ $attributes->merge(['class' => 'group w-80 h-96 m-4 py-8 px-1 project-card']) }}>
     <div
@@ -6,16 +6,16 @@
 
         <h3
             class="absolute -top-5 -left-3 p-2 bg-gradient-radial rounded-r-3xl rounded-l-sm text-2xl font-merriweather text-center">
-            {{ $project->name }}
+            {{ $projectName }}
         </h3>
 
-        <a href="{{ $project->href }}" target="__blank"
+        <a href="{{ $projectHref }}" target="__blank"
             class="block w-full mx-auto p-2 md:mx-auto group-hover:rotate-2 transition ease-in-out delay-75 duration-150">
-            <img src="{{ $project->img }}" alt="Eazy IP Web app showcase mockup" srcset="" class="object-fill">
+            <img src="{{ $projectImg }}" alt="Eazy IP Web app showcase mockup" srcset="" class="object-fill">
         </a>
 
         <p class="absolute -bottom-10 left-6 w-72 h-36 p-4 bg-inherit shadow-lg rounded-3xl group-hover:shadow-xl">
-            {{ $project->desc }}
+            {{ $projectDesc }}
         </p>
     </div>
 </div>

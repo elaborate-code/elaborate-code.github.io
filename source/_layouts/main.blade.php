@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html lang="{{ $lang ?? 'en' }}">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
