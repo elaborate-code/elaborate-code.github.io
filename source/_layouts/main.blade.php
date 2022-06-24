@@ -19,8 +19,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="canonical" href="{{ $page->getUrl() }}">
-    <meta property="og:url" content="{{ $page->getUrl() }}" />
+    <link rel="canonical" href="{{ $page->baseUrl }}">
+    <meta property="og:url" content="{{ $page->baseUrl }}" />
 
     <title> {{ $page->title }} </title>
     <meta property="og:title" content="{{ $page->title }}" />
@@ -30,7 +30,7 @@
 
     <meta property="og:type" content="website" />
 
-    <meta property="og:image" content="assets/images/OG-image.png" />
+    <meta property="og:image" content="{{ $page->baseUrl }}assets/images/OG-image.png" />
 
     <meta property="og:locale" content="en_US" />
 
