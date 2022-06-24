@@ -223,7 +223,9 @@
                         $href = str_replace('/en', '/', $href);
                     @endphp
 
-                    <a href="{{ $href }}" class="m-2"> {{ strtoupper($langOpt) }} </a>
+                    <a href="{{ $href }}"
+                        class="m-2 {{ $langOpt === $lang ? 'underline underline-offset-1' : '' }}">
+                        {{ strtoupper($langOpt) }} </a>
                 @endforeach
             </div>
         </div>

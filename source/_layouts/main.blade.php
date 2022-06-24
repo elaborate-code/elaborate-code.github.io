@@ -30,7 +30,7 @@
 
     <meta property="og:type" content="website" />
 
-    <meta property="og:image" content="assets/images/logo-square-1080.png" />
+    <meta property="og:image" content="assets/images/square-logo-1080.png" />
 
     <meta property="og:locale" content="en_US" />
 
