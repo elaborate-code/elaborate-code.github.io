@@ -3,8 +3,8 @@
 return [
     'production' => false,
     'baseUrl' => 'https://elaboratecode.com',
-    'name' => 'Elaborate code',
-    'title' => 'Elaborate code',
+    'name' => 'Elaborate Code',
+    'title' => 'Elaborate Code',
     'description' => 'IT Services and IT Consulting',
     'collections' => [],
     // 
