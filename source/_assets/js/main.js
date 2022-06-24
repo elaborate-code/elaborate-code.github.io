@@ -1,4 +1,7 @@
 // Check if service worker is available.
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker
         .register("/sw.js")

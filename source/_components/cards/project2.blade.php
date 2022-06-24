@@ -11,7 +11,8 @@
 
         <a href="https://eazyip.github.io/" target="__blank"
             class="block w-full mx-auto p-2 md:mx-auto hover:rotate-2 transition ease-in-out delay-75 duration-150">
-            <img src="{{ $project->img }}" alt="Eazy IP Web app showcase mockup" srcset="" class="object-fill">
+            <img data-src="{{ $project->img }}" alt="Eazy IP Web app showcase mockup" srcset=""
+                class="lazyload object-fill">
         </a>
 
         <p
