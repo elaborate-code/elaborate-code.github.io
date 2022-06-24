@@ -37,7 +37,7 @@ return [
         [
             'title' => 'Network engineering',
             'desc' => [
-                'en' => 'We know very well that the network is the foundation of digitalization and you can trust us to manage its various aspects.',
+                'en' => 'We know very well that the network is the foundation of digitalisation and you can trust us to manage its various aspects.',
                 'fr' => 'Nous savons très bien que le réseau est le fondement de la digitalisation et vous pouvez nous faire confiance pour gérer ses différents aspects.',
             ],
             'img' => '/assets/images/young-man-engineer-making-program-analyses-min.jpg',

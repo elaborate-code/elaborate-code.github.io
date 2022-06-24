@@ -121,51 +121,54 @@
 
     <footer class="bg-nero text-white-smoke">
 
-        <div class="p-8 bg-frozen-blue-dark">
+        <div class="p-2 md:p-8 bg-frozen-blue-dark">
             <div class="container mx-auto">
 
-                <div class="flex flex-col gap-4 md:flex-row">
-                    <div class="basis-full md:basis-1/2 flex justify-around items-center">
+                <div class="">
+                    <div class="basis-full md:flex-1 flex justify-around items-center">
                         <a href="https://www.linkedin.com/company/elaboratecode" target="__blank" class="flex">
                             <x-icons.linkedin class="h-10 aspect-square" />
                         </a>
                         <a href="https://github.com/elaborate-code" target="__blank" class="flex">
                             <x-icons.github class="h-10 aspect-square" />
                         </a>
+                        <a href="https://www.instagram.com/elaborate_code/" target="__blank" class="flex">
+                            <x-icons.instagram class="h-10 aspect-square" />
+                        </a>
                     </div>
 
-                    <div class="basis-full md:basis-1/2 text-xs">
-                        <p> Free assets attributions: </p>
-                        <ul class="list-disc">
-                            <li>
+                    <div class="w-full py-6 px-2 text-xs">
+                        <p class="text-center underline"> Free assets attributions: </p>
+                        <ul class="flex justify-around flex-wrap gap-2 p-2 list-disc">
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/photos/cloud-backup'>
                                     Cloud backup photo created by rawpixel.com - www.freepik.com</a>
                             </li>
-                            <li>
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/photos/plexus'>
                                     Plexus photo created by kjpargeter - www.freepik.com</a>
                             </li>
-                            <li>
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/photos/it-people'>
                                     It people photo created by ArthurHidden - www.freepik.com</a>
                             </li>
-                            <li>
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/photos/man-work'>
                                     Man work photo created by ArthurHidden - www.freepik.com</a>
                             </li>
-                            <li>
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/photos/network-engineer'>
                                     Network engineer photo created by senivpetro - www.freepik.com</a>
                             </li>
-                            <li>
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/psd/laptop-mobile'>
                                     Laptop mobile psd created by riandra - www.freepik.com</a>
                             </li>
-                            <li>
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/psd/website-mockup'>
                                     Website mockup psd created by aleksandr_samochernyi - www.freepik.com</a>
                             </li>
-                            <li>
+                            <li class="w-32 md:w-40">
                                 <a target="__blank" href='https://www.freepik.com/psd/browser-mockup'>
                                     Browser mockup psd created by designwarrior - www.freepik.com</a>
                             </li>
