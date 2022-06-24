@@ -225,7 +225,8 @@
 
                     <a href="{{ $href }}"
                         class="m-2 {{ $langOpt === $lang ? 'underline underline-offset-1' : '' }}">
-                        {{ strtoupper($langOpt) }} </a>
+                        {{ strtoupper($langOpt) }}
+                    </a>
                 @endforeach
             </div>
         </div>
