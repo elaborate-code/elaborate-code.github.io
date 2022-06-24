@@ -129,18 +129,22 @@
     <footer class="bg-nero text-white-smoke" translate="no">
 
         <div class="p-2 md:p-8 bg-frozen-blue-dark">
+
             <div class="container mx-auto">
 
                 <div class="">
                     <div class="basis-full md:flex-1 flex justify-around items-center">
-                        <a href="https://www.linkedin.com/company/elaboratecode" target="__blank" class="flex">
-                            <x-icons.linkedin class="h-10 aspect-square" />
+                        <a aria-label="Our Linkedin page" href="https://www.linkedin.com/company/elaboratecode"
+                            target="__blank" class="">
+                            <x-icons.linkedin class="h-12 aspect-square" />
                         </a>
-                        <a href="https://github.com/elaborate-code" target="__blank" class="flex">
-                            <x-icons.github class="h-10 aspect-square" />
+                        <a aria-label="Our Github page" href="https://github.com/elaborate-code" target="__blank"
+                            class="">
+                            <x-icons.github class="h-12 aspect-square" />
                         </a>
-                        <a href="https://www.instagram.com/elaborate_code/" target="__blank" class="flex">
-                            <x-icons.instagram class="h-10 aspect-square" />
+                        <a aria-label="Our Instagram page" href="https://www.instagram.com/elaborate_code/" target="__blank"
+                            class="">
+                            <x-icons.instagram class="h-12 aspect-square" />
                         </a>
                     </div>
 
@@ -149,36 +153,44 @@
                             Free assets attributions:
                         </p>
                         <ul class="flex justify-around flex-wrap gap-2 p-2 list-disc">
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/photos/cloud-backup'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/photos/cloud-backup'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     Cloud backup photo created by rawpixel.com - www.freepik.com</a>
                             </li>
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/photos/plexus'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/photos/plexus'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     Plexus photo created by kjpargeter - www.freepik.com</a>
                             </li>
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/photos/it-people'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/photos/it-people'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     It people photo created by ArthurHidden - www.freepik.com</a>
                             </li>
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/photos/man-work'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/photos/man-work'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     Man work photo created by ArthurHidden - www.freepik.com</a>
                             </li>
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/photos/network-engineer'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/photos/network-engineer'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     Network engineer photo created by senivpetro - www.freepik.com</a>
                             </li>
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/psd/laptop-mobile'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/psd/laptop-mobile'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     Laptop mobile psd created by riandra - www.freepik.com</a>
                             </li>
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/psd/website-mockup'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/psd/website-mockup'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     Website mockup psd created by aleksandr_samochernyi - www.freepik.com</a>
                             </li>
-                            <li class="w-32 md:w-40">
-                                <a target="__blank" href='https://www.freepik.com/psd/browser-mockup'>
+                            <li>
+                                <a target="__blank" href='https://www.freepik.com/psd/browser-mockup'
+                                    class="block w-32 min-h-[48px] md:w-40">
                                     Browser mockup psd created by designwarrior - www.freepik.com</a>
                             </li>
                         </ul>
@@ -191,7 +203,7 @@
         <div class="flex justify-between container mx-auto p-2">
             <div class="flex items-center text-white-smoke text-center">
                 <p>
-            Copyright &copy; {{ date('Y') }}
+                    Copyright &copy; {{ date('Y') }}
                 </p>
             </div>
 

@@ -30,8 +30,7 @@
 
     <meta property="og:type" content="website" />
 
-    <meta property="og:image"
-        content="assets/images/cloud-storage-background-remixed-from-public-domain-by-nasa-min.jpg" />
+    <meta property="og:image" content="assets/images/logo-square-1080.png" />
 
     <meta property="og:locale" content="en_US" />
 

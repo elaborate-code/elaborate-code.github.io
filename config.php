@@ -53,7 +53,7 @@ return [
             'name' => 'Residenceely',
             'desc' => 'Helps real estate agencies keep records of their apartments and clients and fully manages the sales process',
             'href' => '#',
-            'img' => 'https://via.placeholder.com/320x180/F2F2F2/600505?text=RESIDENCEELY',
+            'img' => '/assets/images/residenceely.png',
         ],
     ],
     // =========================================================================================================
