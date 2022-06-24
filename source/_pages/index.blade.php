@@ -187,8 +187,34 @@
 
             </div>
         </div>
-        <div class="py-4 text-white-smoke text-center">
+
+        <div class="flex justify-between container mx-auto p-2">
+            <div class="flex items-center text-white-smoke text-center">
+                <p>
             Copyright &copy; {{ date('Y') }}
+                </p>
+            </div>
+
+            <div class="flex items-center text-white">
+                @foreach (['en', 'fr'] as $langOpt)
+                    @php
+                        $href = '';
+                        
+                        if ($lang === 'en') {
+                            $href = preg_replace('/^/', "$langOpt", $page->getPath());
+                        } else {
+                            $href = preg_replace("/^$lang/", "$langOpt", $page->getPath());
+                        }
+                        
+                        $href = '/' . $href;
+                        
+                        $href = str_replace('/en', '/', $href);
+                    @endphp
+
+                    <a href="{{ $href }}" class="m-2"> {{ strtoupper($langOpt) }} </a>
+                @endforeach
+            </div>
         </div>
+
     </footer>
 @endsection
