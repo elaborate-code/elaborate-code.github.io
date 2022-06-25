@@ -1,42 +1,33 @@
 @extends('_layouts.main')
 
-@section('body')
-    <nav class="absolute top-0 w-full">
-        <div class="container mx-auto p-4 text-center">
-            <x-logo class="h-9 mx-auto text-white" />
-            <p class="text-white" translate="no"> {{ $page->name }} </p>
+@section('header')
+    <section name="hero section" class="h-screen hero-bg sm:hero-bg-alt">
+        <div class="container h-full mx-auto flex flex-col justify-center text-white">
+
+            <div class="px-8 md:px-20 xl:px-48">
+                <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center" lang="en" translate="no">
+                    The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
+                    For the ultimate productivity
+                </h1>
+
+                <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
+
+                <p class="mb-8 md:px-20 lg:px-36 text-xl text-center">
+                    {{ $page->$lang['Achieve more by adopting automated workflows and networking informations between the various segments of your company'] }}
+                </p>
+
+                <a href="#cta"
+                    class="block w-fit mx-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-full">
+                    {{ $page->$lang['Request a service'] }}
+                </a>
+            </div>
+
         </div>
-    </nav>
+    </section>
+@endsection
 
-    <main class="scroll-smooth">
-
-        <section name="hero section" class="h-screen hero-bg sm:hero-bg-alt">
-            <header class="container h-full mx-auto flex flex-col text-white">
-
-                <div class="flex-1 flex flex-col justify-center">
-
-                    <div class="px-8 md:px-20 xl:px-48">
-                        <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center" lang="en"
-                            translate="no">
-                            The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
-                            For the ultimate productivity
-                        </h1>
-
-                        <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
-
-                        <p class="mb-8 md:px-20 lg:px-36 text-xl text-center">
-                            {{ $page->$lang['Achieve more by adopting automated workflows and networking informations between the various segments of your company'] }}
-                        </p>
-
-                        <a href="#cta"
-                            class="block w-fit mx-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-full">
-                            {{ $page->$lang['Request a service'] }}
-                        </a>
-                    </div>
-                </div>
-
-            </header>
-        </section>
+@section('body')
+    <main>
 
         {{-- <section name="Clients and partners" class="bg-gray-100 h-24"> our partners/clients </section> --}}
 

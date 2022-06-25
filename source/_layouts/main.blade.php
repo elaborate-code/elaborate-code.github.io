@@ -60,7 +60,13 @@
     <meta name="twitter:card" content="summary_large_image" />
 </head>
 
-<body class="font-raleway">
+<body class="font-raleway scroll-smooth">
+    <header>
+        <x-nav :page="$page" lang="{{ $lang }}" />
+
+        @yield('header')
+    </header>
+
     @yield('body')
 </body>
 
@@ -170,18 +176,8 @@
             </p>
         </div>
 
-        <div class="flex items-center text-white">
-            @foreach (['en', 'fr'] as $lang_opt)
-                @php
-                    $href = $page->lang_route($lang, $lang_opt);
-                @endphp
+        <x-nav-langs :page="$page" lang="{{ $lang }}" />
 
-                <a href="{{ $href }}"
-                    class="m-2 {{ $lang_opt === $lang ? 'underline underline-offset-1' : '' }}">
-                    {{ strtoupper($lang_opt) }}
-                </a>
-            @endforeach
-        </div>
     </div>
 
 </footer>
