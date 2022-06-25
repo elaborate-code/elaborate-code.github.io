@@ -102,7 +102,8 @@
                 </div>
             </form>
 
-            <a class="block mt-4 cursor-pointer text-firecracker-salmon-light text-sm text-center underline" href="#">
+            <a class="block mt-4 cursor-pointer text-firecracker-salmon-light text-sm text-center underline"
+                href="{{ $page->route('/contact', $lang) }}">
                 {{ $page->$lang['Or send us a detailed message'] }}
             </a>
         </section>
@@ -113,7 +114,7 @@
                 {{ $page->$lang['Our Featured applications'] }}
             </h2>
 
-            <div class="flex flex-wrap justify-center gap-12 container mx-auto">
+            <div class="flex flex-wrap justify-center gap-6 container mx-auto lg:gap-12">
 
                 @foreach ($page->projects as $project)
                     <x-cards.project project-name="{{ $project->name }}"
@@ -125,111 +126,4 @@
         </section>
 
     </main>
-
-    <footer class="bg-nero text-white-smoke" translate="no">
-
-        <div class="p-2 md:p-8 bg-frozen-blue-dark">
-
-            <div class="container mx-auto">
-
-                <div class="">
-                    <div class="basis-full md:flex-1 flex justify-around items-center">
-                        <a aria-label="Our Linkedin page" href="https://www.linkedin.com/company/elaboratecode"
-                            target="__blank" class="">
-                            <x-icons.linkedin class="h-12 aspect-square" />
-                        </a>
-                        <a aria-label="Our Github page" href="https://github.com/elaborate-code" target="__blank"
-                            class="">
-                            <x-icons.github class="h-12 aspect-square" />
-                        </a>
-                        <a aria-label="Our Instagram page" href="https://www.instagram.com/elaborate_code/" target="__blank"
-                            class="">
-                            <x-icons.instagram class="h-12 aspect-square" />
-                        </a>
-                    </div>
-
-                    <div class="w-full py-6 px-2 text-xs">
-                        <p class="text-center underline" lang="en">
-                            Free assets attributions:
-                        </p>
-                        <ul class="flex justify-around flex-wrap gap-2 p-2 list-disc">
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/photos/cloud-backup'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    Cloud backup photo created by rawpixel.com - www.freepik.com</a>
-                            </li>
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/photos/plexus'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    Plexus photo created by kjpargeter - www.freepik.com</a>
-                            </li>
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/photos/it-people'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    It people photo created by ArthurHidden - www.freepik.com</a>
-                            </li>
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/photos/man-work'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    Man work photo created by ArthurHidden - www.freepik.com</a>
-                            </li>
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/photos/network-engineer'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    Network engineer photo created by senivpetro - www.freepik.com</a>
-                            </li>
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/psd/laptop-mobile'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    Laptop mobile psd created by riandra - www.freepik.com</a>
-                            </li>
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/psd/website-mockup'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    Website mockup psd created by aleksandr_samochernyi - www.freepik.com</a>
-                            </li>
-                            <li>
-                                <a target="__blank" href='https://www.freepik.com/psd/browser-mockup'
-                                    class="block w-32 min-h-[48px] md:w-40">
-                                    Browser mockup psd created by designwarrior - www.freepik.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="flex justify-between container mx-auto p-2">
-            <div class="flex items-center text-white-smoke text-center">
-                <p>
-                    Copyright &copy; {{ date('Y') }}
-                </p>
-            </div>
-
-            <div class="flex items-center text-white">
-                @foreach (['en', 'fr'] as $langOpt)
-                    @php
-                        $href = '';
-                        
-                        if ($lang === 'en') {
-                            $href = preg_replace('/^/', "$langOpt", $page->getPath());
-                        } else {
-                            $href = preg_replace("/^$lang/", "$langOpt", $page->getPath());
-                        }
-                        
-                        $href = '/' . $href;
-                        
-                        $href = str_replace('/en', '/', $href);
-                    @endphp
-
-                    <a href="{{ $href }}"
-                        class="m-2 {{ $langOpt === $lang ? 'underline underline-offset-1' : '' }}">
-                        {{ strtoupper($langOpt) }}
-                    </a>
-                @endforeach
-            </div>
-        </div>
-
-    </footer>
 @endsection
