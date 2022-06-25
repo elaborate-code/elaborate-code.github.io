@@ -19,8 +19,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="canonical" href="{{ $page->baseUrl }}">
-    <meta property="og:url" content="{{ $page->baseUrl }}" />
+    <link rel="canonical" href="{{ $page->getUrl() }}">
+    <meta property="og:url" content="{{ $page->getUrl() }}" />
 
     <title> {{ $page->title }} </title>
     <meta property="og:title" content="{{ $page->title }}" />
