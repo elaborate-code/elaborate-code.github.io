@@ -8,6 +8,17 @@ return [
     'description' => 'IT Services and IT Consulting',
     'collections' => [],
     // 
+    'socials' => [
+        'linkedin' => 'https://www.linkedin.com/company/elaboratecode',
+        'github' => 'https://github.com/elaborate-code',
+        'twitter' => '',
+        'instagram' => 'https://www.instagram.com/elaborate_code/',
+        'youtube' => 'https://www.youtube.com/channel/UCkap_5-2E7fF_uAbfkx1wEg',
+        'facebook' => 'https://www.facebook.com/elaboratecode/',
+    ],
+    'main_email' => 'medilies.contact@gmail.com',
+    'main_phone' => '+213675026963',
+    // 
     'services' => [
         [
             'title' => 'Software development',

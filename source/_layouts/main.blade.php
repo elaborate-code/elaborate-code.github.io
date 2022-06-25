@@ -70,18 +70,45 @@
 
         <div class="flex flex-col gap-4 container mx-auto">
 
-            <div class="basis-full flex justify-center items-center gap-8">
-                <a aria-label="Our Linkedin page" href="https://www.linkedin.com/company/elaboratecode" target="__blank"
-                    class="">
-                    <x-icons.linkedin class="h-12 aspect-square" />
+            <div class="basis-full flex flex-wrap justify-center items-center gap-4 md:gap-8">
+                @if ($page->socials->linkedin)
+                    <a aria-label="Our Linkedin page" href="{{ $page->socials->linkedin }}" target="__blank">
+                        <x-icons.linkedin class="h-12 aspect-square" />
+                    </a>
+                @endif
+                @if ($page->socials->twitter)
+                    <a aria-label="Our Twitter page" href="{{ $page->socials->twitter }}" target="__blank">
+                        <x-icons.twitter class="h-12 aspect-square" />
+                    </a>
+                @endif
+                @if ($page->socials->github)
+                    <a aria-label="Our Github page" href="{{ $page->socials->github }}" target="__blank">
+                        <x-icons.github class="h-12 aspect-square" />
+                    </a>
+                @endif
+                @if ($page->socials->instagram)
+                    <a aria-label="Our Instagram page" href="{{ $page->socials->instagram }}" target="__blank">
+                        <x-icons.instagram class="h-12 aspect-square" />
+                    </a>
+                @endif
+                @if ($page->socials->youtube)
+                    <a aria-label="Our Youtube page" href="{{ $page->socials->youtube }}" target="__blank">
+                        <x-icons.youtube class="h-12 aspect-square" />
+                    </a>
+                @endif
+                @if ($page->socials->facebook)
+                    <a aria-label="Our Facebook page" href="{{ $page->socials->facebook }}" target="__blank">
+                        <x-icons.facebook class="h-12 aspect-square" />
+                    </a>
+                @endif
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="mailto:{{ $page->main_email }}" class="flex items-center h-12">
+                    {{ $page->main_email }}
                 </a>
-                <a aria-label="Our Github page" href="https://github.com/elaborate-code" target="__blank"
-                    class="">
-                    <x-icons.github class="h-12 aspect-square" />
-                </a>
-                <a aria-label="Our Instagram page" href="https://www.instagram.com/elaborate_code/" target="__blank"
-                    class="">
-                    <x-icons.instagram class="h-12 aspect-square" />
+                <a href="tel:{{ $page->main_phone }}" class="flex items-center h-12">
+                    {{ $page->main_phone }}
                 </a>
             </div>
 
