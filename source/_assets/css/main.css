@@ -11,6 +11,10 @@
         background: linear-gradient(to bottom, #26262688 75%, #ccc8  ), url(/assets/images/hero-bg.jpg) no-repeat left bottom  /cover;    
     }
 
+    .contact-bg{
+        background: url(/assets/images/business-man-working-talking-phone-concept-min.jpg) no-repeat center center /cover;
+    }
+
     .card{
         @apply bg-frozen-blue-50 rounded-3xl shadow-xl border md:shadow-none md:hover:scale-105 md:hover:shadow-xl md:hover:border
         transition ease-in-out delay-75 duration-150;
