@@ -35,7 +35,7 @@
     <meta property="og:locale" content="en_US" />
 
     
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=4bf246744ca34cd309c823985cc28821">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=6df2285a36227e4a48c169007102b1f1">
     <script defer src="/assets/build/js/main.js?id=69dcac79cd87d7bd936997673d3927e3"></script>
 
     
@@ -61,12 +61,13 @@
 </head>
 
 <body class="font-raleway scroll-smooth">
-    <header>
-        <nav class="absolute top-0 w-full">
+
+        <header class="">
+        <nav class="bg-frozen-blue-dark text-white">
     <div class="flex justify-between container mx-auto p-4 text-center">
 
         <a href="/fr/" class="flex items-center gap-2">
-            <svg width="112" height="67" viewBox="0 0 112 67" fill="currentColor" class="h-9 w-fit mx-auto text-white"
+            <svg width="112" height="67" viewBox="0 0 112 67" fill="currentColor" class="h-9 w-fit mx-auto"
     xmlns="http://www.w3.org/2000/svg">
     <path
         d="M85.331 67C86.409 64.2074 87 61.1727 87 58C87 44.1929 75.8071 33 62 33C48.1929 33 37 44.1929 37 58C37 61.1727 37.591 64.2074 38.669 67H49.9989C48.1158 64.493 47 61.3768 47 58C47 49.7157 53.7157 43 62 43C70.2843 43 77 49.7157 77 58C77 61.3768 75.8842 64.493 74.0011 67H85.331Z"
@@ -85,7 +86,7 @@
         d="M22.1975 45.9995C22.0669 47.3153 22 48.6498 22 50C22 52.0386 22.1525 54.0415 22.4467 55.998C48.1055 55.7735 69.1511 36.2217 71.7336 11.1926C68.6178 10.4136 65.3572 10 62 10C61.9341 10 61.8683 10.0002 61.8025 10.0005C59.8017 30.1493 42.8494 45.8997 22.1975 45.9995Z"
         fill="inherit" />
 </svg>
-            <p class="w-max text-white text-left text-sm sm:text-base md:text-lg" translate="no"> Elaborate Code </p>
+            <p class="w-maxtext-left text-sm text-left sm:text-base md:text-lg" translate="no"> Elaborate Code </p>
         </a>
 
         <div class="basis-1/2 flex justify-end items-center text-white text-sm">
@@ -102,15 +103,80 @@
     </div>
 </nav>
 
-            </header>
+        <section class="bg-gray-200 contact-bg">
+            <div class="container aspect-video max-h-[600px] mx-auto flex justify-center sm:justify-end">
 
-    </body>
+                <div class="h-full p-4 flex justify-center items-center sm:basis-1/2">
+                    <div class="flex gap-4">
+                        <div class="hidden w-2 bg-bloodmyst-isle sm:block"></div>
+                        <h1
+                            class="text-bloodmyst-isle text-5xl font-yeseva-one text-center font-bold sm:text-left sm:text-7xl lg:text-9xl">
+                            Contact us
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
-<footer class="bg-nero text-white-smoke" translate="no">
+        <section class="py-8 bg-white-smoke">
+        <div class="flex flex-col gap-8 container mx-auto p-4">
+
+            <h2 class="text-bloodmyst-isle text-center text-3xl animate-pulse">
+                Let's talk
+            </h2>
+
+            <p class="text-center text-frozen-blue-dark">
+                Let us know how we can help and we'll get in touch with you shortly
+            </p>
+
+            <form action="https://formsubmit.co/ee12d2b34596e814d47702339907bd3e" method="POST">
+
+                <input type="hidden" name="_subject" value="Elaborate Code service request">
+                <input type="hidden" name="_template" value="table">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://elaboratecode.com/fr/contact">
+                
+
+                <div class="w-full grid grid-cols-4 gap-4 text-lg font-merriweather lg:w-2/3 xl:w-1/2 mx-auto">
+
+                    <input type="text" name="full_name" placeholder="Full name" required
+                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm">
+
+                    <input type="email" name="email" placeholder="E-mail" required
+                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm md:col-span-2">
+
+                    <input type="tel" name="phone" placeholder="Numéro de téléphone"
+                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm md:col-span-2">
+
+                    <textarea name="message" rows="5"
+                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm"></textarea>
+
+                    <button
+                        class="col-span-full py-4 px-2 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white">
+                        Envoyer
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-nero text-white-smoke" translate="no">
 
     <div class="py-4 px-2 bg-frozen-blue-dark">
 
         <div class="flex flex-col gap-4 container mx-auto">
+
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="mailto:medilies.contact@gmail.com" class="flex items-center h-12">
+                    medilies.contact@gmail.com
+                </a>
+                <a href="tel:+213675026963" class="flex items-center h-12">
+                    +213675026963
+                </a>
+            </div>
 
             <div class="basis-full flex flex-wrap justify-center items-center gap-4 md:gap-8">
                                     <a aria-label="Our Linkedin page" href="https://www.linkedin.com/company/elaboratecode" target="__blank">
@@ -158,15 +224,6 @@
 </svg>
                     </a>
                             </div>
-
-            <div class="flex flex-wrap justify-center items-center gap-4">
-                <a href="mailto:medilies.contact@gmail.com" class="flex items-center h-12">
-                    medilies.contact@gmail.com
-                </a>
-                <a href="tel:+213675026963" class="flex items-center h-12">
-                    +213675026963
-                </a>
-            </div>
 
             <div class="w-full text-xs">
                 <p class="text-center underline" lang="en">
@@ -240,5 +297,6 @@
     </div>
 
 </footer>
+</body>
 
 </html>
