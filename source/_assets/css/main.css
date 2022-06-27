@@ -12,7 +12,7 @@
     }
 
     .contact-bg{
-        background: url(/assets/images/business-man-working-talking-phone-concept-min.jpg) no-repeat center center /cover;
+        background: linear-gradient(to bottom, #1d374877 80%, #F2F2F277 ), url(/assets/images/business-man-working-talking-phone-concept-min.jpg) no-repeat center center /cover;
     }
 
     .card{
