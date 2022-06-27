@@ -1,29 +1,35 @@
 @extends('_layouts.main')
 
 @section('header')
-    <section name="hero section" class="h-screen hero-bg sm:hero-bg-alt">
-        <div class="container h-full mx-auto flex flex-col justify-center text-white">
+    <header class="h-screen">
 
-            <div class="px-8 md:px-20 xl:px-48">
-                <h1 class="text-4xl md:text-5xl xl:text-7xl font-yeseva-one text-center" lang="en" translate="no">
-                    The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
-                    For the ultimate productivity
-                </h1>
+        <x-nav :page="$page" lang="{{ $lang }}" class="absolute top-0 w-full text-white" />
 
-                <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
+        <section name="hero section" class="h-screen hero-bg sm:hero-bg-alt">
+            <div class="container h-full mx-auto flex flex-col justify-center text-white">
 
-                <p class="mb-8 md:px-20 lg:px-36 text-xl text-center">
-                    {{ $page->$lang['Achieve more by adopting automated workflows and networking informations between the various segments of your company'] }}
-                </p>
+                <div class="px-8 md:px-20 xl:px-48">
+                    <h1 class="text-4xl font-yeseva-one text-center md:text-5xl lg:6xl xl:text-7xl" lang="en"
+                        translate="no">
+                        The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
+                        For the ultimate productivity
+                    </h1>
 
-                <a href="#cta"
-                    class="block w-fit mx-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-full">
-                    {{ $page->$lang['Request a service'] }}
-                </a>
+                    <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
+
+                    <p class="mb-8 text-xl text-center md:text-2xl md:px-20 lg:px-36">
+                        {{ $page->$lang['Achieve more by adopting automated workflows and networking informations between the various segments of your company'] }}
+                    </p>
+
+                    <a href="#cta"
+                        class="block w-fit mx-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-sm">
+                        {{ $page->$lang['Request a service'] }}
+                    </a>
+                </div>
+
             </div>
-
-        </div>
-    </section>
+        </section>
+    </header>
 @endsection
 
 @section('body')
@@ -70,24 +76,24 @@
 
             {{-- https://formsubmit.co/ajax-documentation --}}
             <form action="https://formsubmit.co/ee12d2b34596e814d47702339907bd3e" method="POST">
+
+                <input type="hidden" name="_subject" value="Elaborate Code contact message">
+                <input type="hidden" name="_template" value="table">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="{{ $page->getUrl() }}">
+                {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
+
                 <div class="flex flex-col justify-center items-center md:flex-row gap-4 text-lg font-merriweather">
-
-                    <input type="hidden" name="_subject" value="Elaborate Code service request">
-                    <input type="hidden" name="_template" value="table">
-
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_next" value="{{ $page->getUrl() }}">
-                    {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
-
                     <input type="email" name="email" placeholder="E-mail" required
                         class="w-72 h-14 px-4 outline-none border-none rounded-sm">
 
-                    <input type="tel" name="phone" placeholder="{{ $page->$lang['Phone number'] }}" required
+                    <input type="tel" name="phone" placeholder="{{ $page->$lang['Phone number'] }}"
                         class="w-56 h-14 px-4 outline-none border-none rounded-sm">
 
                     <button
-                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:shadow-white-smoke">
+                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white-smoke">
                         {{ $page->$lang['Send'] }}
                     </button>
                 </div>
