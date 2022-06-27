@@ -11,8 +11,8 @@
                     <div class="flex gap-4">
                         <div class="hidden w-2 bg-bloodmyst-isle sm:block"></div>
                         <h1
-                            class="text-bloodmyst-isle text-5xl font-yeseva-one text-center font-bold sm:text-left sm:text-7xl lg:text-9xl">
-                            Contact us
+                            class="text-bloodmyst-isle text-5xl font-yeseva-one text-center font-bold sm:text-left sm:text-6xl md:text-7xl lg:text-8xl">
+                            {{ $page->$lang['Contact us'] }}
                         </h1>
                     </div>
                 </div>
@@ -26,11 +26,11 @@
         <div class="flex flex-col gap-8 container mx-auto p-4">
 
             <h2 class="text-bloodmyst-isle text-center text-3xl">
-                Let's talk
+                {{ $page->$lang['Let\'s talk'] }}
             </h2>
 
             <p class="text-center text-frozen-blue-dark">
-                Let us know how we can help and we'll get in touch with you shortly
+                {{ $page->$lang['Let us know how we can help and we\'ll get in touch with you shortly'] }}
             </p>
 
             <form action="https://formsubmit.co/ee12d2b34596e814d47702339907bd3e" method="POST">
@@ -45,8 +45,9 @@
 
                 <div class="w-full grid grid-cols-4 gap-4 text-lg font-merriweather lg:w-2/3 xl:w-1/2 mx-auto">
 
-                    <input type="text" name="full_name" placeholder="Full name" required
-                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm">
+                    <input type="text" name="full_name" placeholder="{{ $page->$lang['Full name'] }}" required
+                        class="col-span-full
+                        py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm">
 
                     <input type="email" name="email" placeholder="E-mail" required
                         class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm md:col-span-2">

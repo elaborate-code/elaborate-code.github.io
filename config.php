@@ -71,6 +71,7 @@ return [
     'en' => [
         'Send' => 'Send',
         'Phone number' => 'Phone number',
+        'Full name' => 'Full name',
         // Hero
         'Achieve more by adopting automated workflows and networking informations between the various segments of your company' => 'Achieve more by adopting automated workflows and networking informations between the various
         segments of your company',
@@ -96,11 +97,16 @@ return [
         'A multi-user home automation IOT platform that enables functionalities like realtime sensors monitoring and remote actions' => 'A multi-user home automation IOT platform that enables functionalities like realtime sensors monitoring and remote actions',
         'Tailored according to the algerian education system and destined to be in charge of administering students registrations step by step in privet schools' => 'Tailored according to the algerian education system and destined to be in charge of administering students registrations step by step in privet schools',
         'Helps real estate agencies keep records of their apartments and clients and fully manages the sales process' => 'Helps real estate agencies keep records of their apartments and clients and fully manages the sales process',
+        // contact page
+        "Contact us" => "Contact us",
+        "Let's talk" => "Let's talk",
+        "Let us know how we can help and we'll get in touch with you shortly" => "Let us know how we can help and we'll get in touch with you shortly",
     ],
     // =========================================================================================================
     'fr' => [
         'Send' => 'Envoyer',
         'Phone number' => 'Numéro de téléphone',
+        'Full name' => 'Nom complet',
         // Hero
         'Achieve more by adopting automated workflows and networking informations between the various segments of your company' => 'Achevez plus en adoptant un mode de travail automatisés et en circulant vos informations sous réseau entre les différents segments de votre entreprise',
         'Request a service' => 'Demandez un service',
@@ -125,5 +131,9 @@ return [
         'A multi-user home automation IOT platform that enables functionalities like realtime sensors monitoring and remote actions' => 'Une plateforme IOT domotique multi-utilisateurs qui permet la surveillance des capteurs en temps réel et les actions à distance',
         'Tailored according to the algerian education system and destined to be in charge of administering students registrations step by step in privet schools' => 'Adapté au système éducatif algérien et destiné à gérer pas à pas les inscriptions des élèves dans les écoles privées',
         'Helps real estate agencies keep records of their apartments and clients and fully manages the sales process' => "Aide les agences immobilières à tenir des registres de leurs appartements et de leurs clients et gére entièrement le processus de vente",
+        // contact page
+        "Contact us" => "Contactez nous",
+        "Let's talk" => "Parlez nous",
+        "Let us know how we can help and we'll get in touch with you shortly" => "Faites-nous savoir comment nous pouvons vous aider et nous vous contacterons sous peu",
     ],
 ];
