@@ -1,21 +1,24 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer components {
-
     .hero-bg {
-      background: linear-gradient(to bottom, #26262688 75%, #ccc8  ), url(/assets/images/hero-bg.jpg) no-repeat center center /cover;
+        background: linear-gradient(to bottom, #26262688 75%, #ccc8),
+            url(/assets/images/hero-bg.jpg) no-repeat center center / cover;
     }
     .hero-bg-alt {
-        background: linear-gradient(to bottom, #26262688 75%, #ccc8  ), url(/assets/images/hero-bg.jpg) no-repeat left bottom  /cover;    
+        background: linear-gradient(to bottom, #26262688 75%, #ccc8),
+            url(/assets/images/hero-bg.jpg) no-repeat left bottom / cover;
     }
 
-    .contact-bg{
-        background: linear-gradient(to bottom, #1d374877 80%, #F2F2F277 ), url(/assets/images/business-man-working-talking-phone-concept-min.jpg) no-repeat center center /cover;
+    .contact-bg {
+        background: linear-gradient(to bottom, #1d374855, #fff3),
+            url(/assets/images/business-man-working-talking-phone-concept-min.jpg)
+                no-repeat center center / cover;
     }
 
-    .card{
+    .card {
         @apply bg-frozen-blue-50 rounded-3xl shadow-xl border md:shadow-none md:hover:scale-105 md:hover:shadow-xl md:hover:border
         transition ease-in-out delay-75 duration-150;
     }

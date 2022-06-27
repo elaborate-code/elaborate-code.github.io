@@ -22,10 +22,10 @@
 @endsection
 
 @section('body')
-    <section class="py-8 bg-white-smoke">
+    <section class="py-8 bg-white">
         <div class="flex flex-col gap-8 container mx-auto p-4">
 
-            <h2 class="text-bloodmyst-isle text-center text-3xl">
+            <h2 class="text-bloodmyst-isle text-center text-4xl font-yeseva-one">
                 {{ $page->$lang['Let\'s talk'] }}
             </h2>
 
@@ -55,7 +55,7 @@
                     <input type="tel" name="phone" placeholder="{{ $page->$lang['Phone number'] }}"
                         class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm md:col-span-2">
 
-                    <textarea name="message" aria-label="Message content" rows="5"
+                    <textarea name="message" aria-label="Message content" rows="7"
                         class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm"></textarea>
 
                     <button

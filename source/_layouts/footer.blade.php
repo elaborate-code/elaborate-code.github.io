@@ -91,6 +91,10 @@
                             class="block w-32 min-h-[48px] md:w-40">
                             Browser mockup psd created by designwarrior - www.freepik.com</a>
                     </li>
+                    <li>
+                        <a href='https://www.freepik.com/photos/man-calling' class="block w-32 min-h-[48px] md:w-40">
+                            Mancalling photo created by rawpixel.com - www.freepik.com</a>
+                    </li>
                 </ul>
             </div>
 
