@@ -19,7 +19,7 @@
         <div class="hidden sm:flex justify-end items-center gap-4">
             @foreach ($page->routes as $route)
                 <a href="{{ $page->route($route->url, $lang) }}"
-                    class="block px-2 py-1 hover:text-bloodmyst-isle-light">
+                    class="block px-2 py-1 hover:text-bloodmyst-isle-100">
                     {{ $route->name }}
                 </a>
             @endforeach

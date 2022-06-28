@@ -13,25 +13,25 @@ module.exports = {
             },
             colors: {
                 "bloodmyst-isle": {
-                    light: "#fccece",
+                    100: "#fccece",
                     200: "#f99e9e",
                     300: "#f66e6e",
                     DEFAULT: "#F22929",
                     600: "#f00e0e",
                     700: "#c00b0b",
                     800: "#900808",
-                    dark: "#600505",
+                    900: "#600505",
                 },
                 "firecracker-salmon": {
-                    light: "#fbcfcf",
+                    100: "#fbcfcf",
                     DEFAULT: "#F26363",
-                    dark: "#5e0707",
+                    900: "#5e0707",
                 },
                 "frozen-blue": {
-                    50: "#f6f9fb",
+                    100: "#f6f9fb",
                     DEFAULT: "#A3C4D9",
                     800: "#2c536c",
-                    dark: "#1d3748",
+                    900: "#1d3748",
                 },
                 nero: {
                     DEFAULT: "#262626",

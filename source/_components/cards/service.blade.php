@@ -9,7 +9,7 @@
 
     <div class="p-4 lg:pr-16 basis-2/5 flex flex-col justify-center">
         <h3 class="mb-5 text-bloodmyst-isle text-3xl font-merriweather"> {{ $serviceTitle }} </h3>
-        <p class="text-frozen-blue-dark">
+        <p class="text-frozen-blue-900">
             {{ $serviceDesc }}
         </p>
     </div>

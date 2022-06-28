@@ -2,7 +2,7 @@
 
 @section('header')
     <header class="">
-        <x-nav :page="$page" lang="{{ $lang }}" class="bg-frozen-blue-dark text-white" />
+        <x-nav :page="$page" lang="{{ $lang }}" class="bg-frozen-blue-900 text-white" />
 
         <section class="bg-gray-200 contact-bg">
             <div class="container aspect-video max-h-[600px] mx-auto flex justify-center sm:justify-end">
@@ -29,7 +29,7 @@
                 {{ $page->__('Let\'s talk', $lang) }}
             </h2>
 
-            <p class="text-center text-frozen-blue-dark">
+            <p class="text-center text-frozen-blue-900">
                 {{ $page->__('Let us know how we can help and we\'ll get in touch with you shortly', $lang) }}
             </p>
 
@@ -47,19 +47,19 @@
 
                     <input type="text" name="full_name" placeholder="{{ $page->__('Full name', $lang) }}" required
                         class="col-span-full
-                        py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm">
+                        py-4 px-2 outline-none border-2 border-firecracker-salmon-100 rounded-sm">
 
                     <input type="email" name="email" placeholder="E-mail" required
-                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm md:col-span-2">
+                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-100 rounded-sm md:col-span-2">
 
                     <input type="tel" name="phone" placeholder="{{ $page->__('Phone number', $lang) }}"
-                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm md:col-span-2">
+                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-100 rounded-sm md:col-span-2">
 
                     <textarea name="message" aria-label="Message content" rows="7"
-                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm"></textarea>
+                        class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-100 rounded-sm"></textarea>
 
                     <button
-                        class="col-span-full py-4 px-2 border-2 border-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white hover:border-firecracker-salmon">
+                        class="col-span-full py-4 px-2 border-2 border-bloodmyst-isle-100 text-bloodmyst-isle-900 font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white hover:border-firecracker-salmon">
                         {{ $page->__('Send', $lang) }}
                     </button>
                 </div>

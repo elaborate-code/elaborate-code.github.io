@@ -23,7 +23,7 @@
     }
 
     .card {
-        @apply bg-frozen-blue-50 rounded-3xl shadow-xl border md:shadow-none md:hover:scale-105 md:hover:shadow-xl md:hover:border
+        @apply bg-frozen-blue-100 rounded-3xl shadow-xl border md:shadow-none md:hover:scale-105 md:hover:shadow-xl md:hover:border
         transition ease-in-out delay-75 duration-150;
     }
 
@@ -34,7 +34,7 @@
 
     /* Track */
     ::-webkit-scrollbar-track {
-        @apply bg-frozen-blue-50;
+        @apply bg-frozen-blue-100;
     }
 
     /* Handle */
@@ -51,15 +51,15 @@
         @apply bg-white text-white;
     }
     .project-card-frozen-blue-theme h3 {
-        @apply from-frozen-blue-dark via-frozen-blue-dark to-frozen-blue-800 text-white;
+        @apply from-frozen-blue-900 via-frozen-blue-900 to-frozen-blue-800 text-white;
     }
     .project-card-frozen-blue-theme p {
-        @apply border-frozen-blue-dark text-frozen-blue-dark border hover:text-black;
+        @apply border-frozen-blue-900 text-frozen-blue-900 border hover:text-black;
     }
     .project-card-bloodmyst-isle-theme h3 {
-        @apply from-bloodmyst-isle-dark via-bloodmyst-isle-dark to-bloodmyst-isle-800 text-white;
+        @apply from-bloodmyst-isle-900 via-bloodmyst-isle-900 to-bloodmyst-isle-800 text-white;
     }
     .project-card-bloodmyst-isle-theme p {
-        @apply border-bloodmyst-isle-dark text-bloodmyst-isle-dark border hover:text-black;
+        @apply border-bloodmyst-isle-900 text-bloodmyst-isle-900 border hover:text-black;
     }
 }

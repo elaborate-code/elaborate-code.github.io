@@ -18,7 +18,7 @@
                         For the ultimate productivity
                     </h1>
 
-                    <div class="w-32 h-1 mx-auto bg-frozen-blue-50 rounded-full"></div>
+                    <div class="w-32 h-1 mx-auto bg-frozen-blue-100 rounded-full"></div>
 
                     <p class="text-lg text-center sm:text-xl md:text-2xl md:px-20 lg:px-36">
                         {{ $page->__('Achieve more by adopting automated workflows and networking informations between the various segments of your company', $lang) }}
@@ -68,7 +68,7 @@
             </div>
         </section>
 
-        <section name="CTA" id="cta" class="bg-bloodmyst-isle-dark py-10 px-4">
+        <section name="CTA" id="cta" class="bg-bloodmyst-isle-900 py-10 px-4">
             <h2 class="mb-4 text-bloodmyst-isle text-4xl font-bold font-merriweather text-center">
                 {{ $page->__('Are you interested in our services ?', $lang) }}
             </h2>
@@ -96,13 +96,13 @@
                         class="w-56 h-14 px-4 outline-none border-none rounded-sm">
 
                     <button
-                        class="h-14 w-40 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white-smoke">
+                        class="h-14 w-40 bg-bloodmyst-isle-100 text-bloodmyst-isle-900 font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white-smoke">
                         {{ $page->__('Send', $lang) }}
                     </button>
                 </div>
             </form>
 
-            <a class="block mt-4 cursor-pointer text-firecracker-salmon-light text-sm text-center underline"
+            <a class="block mt-4 cursor-pointer text-firecracker-salmon-100 text-sm text-center underline"
                 href="{{ $page->route('/contact', $lang) }}">
                 {{ $page->__('Or send us a detailed message', $lang) }}
             </a>

@@ -2,7 +2,7 @@
 
 <div {{ $attributes->merge(['class' => 'group w-80 h-96 m-4 py-8 px-1 project-card']) }}>
     <div
-        class="relative w-72 h-80 mx-auto pt-10 pb-28 px-2 bg-frozen-blue-50 text-frozen-blue-50 shadow-lg rounded-3xl hover:shadow-xl">
+        class="relative w-72 h-80 mx-auto pt-10 pb-28 px-2 bg-frozen-blue-100 text-frozen-blue-100 shadow-lg rounded-3xl hover:shadow-xl">
 
         <h3 class="absolute -top-5 -left-3 p-2 bg-gradient-radial rounded-r-3xl rounded-l-sm text-2xl font-merriweather text-center"
             translate="no">

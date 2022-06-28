@@ -1,6 +1,6 @@
 <footer class="bg-nero text-white-smoke" translate="no">
 
-    <div class="py-4 px-2 bg-frozen-blue-dark">
+    <div class="py-4 px-2 bg-frozen-blue-900">
 
         <div class="flex flex-col gap-4 container mx-auto">
 
