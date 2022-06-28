@@ -1,6 +1,6 @@
 @props(['page', 'lang'])
 
-<div class="basis-1/2 flex justify-end items-center text-white text-sm">
+<div {{ $attributes->merge(['class' => 'flex items-center text-sm']) }}>
     @foreach (['en', 'fr'] as $lang_opt)
         @php
             $href = $page->lang_route($lang, $lang_opt);

@@ -8,6 +8,11 @@ return [
     'description' => 'IT Services and IT Consulting',
     'collections' => [],
     // 
+    'routes' => [
+        ['url' => '/', 'name' => 'Home',],
+        ['url' => '/contact', 'name' => 'Contact',],
+    ],
+    // 
     'socials' => [
         'linkedin' => 'https://www.linkedin.com/company/elaboratecode',
         'github' => 'https://github.com/elaborate-code',
