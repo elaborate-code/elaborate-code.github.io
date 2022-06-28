@@ -6,23 +6,26 @@
         <x-nav :page="$page" lang="{{ $lang }}" class="absolute top-0 w-full text-white" />
 
         <section name="hero section" class="h-[90vh] hero-bg sm:hero-bg-alt">
+
+            {{-- center xy --}}
             <div class="container h-full mx-auto flex flex-col justify-center text-white">
 
-                <div class="px-8 md:px-20 xl:px-48">
+                <div class="p-6 flex flex-col gap-y-4 md:px-20 sm:px-8 xl:px-48">
+
                     <h1 class="text-4xl font-yeseva-one text-center md:text-5xl lg:6xl xl:text-7xl" lang="en"
                         translate="no">
                         The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
                         For the ultimate productivity
                     </h1>
 
-                    <div class="w-32 h-1 my-4 mx-auto bg-frozen-blue-50 rounded-full"></div>
+                    <div class="w-32 h-1 mx-auto bg-frozen-blue-50 rounded-full"></div>
 
-                    <p class="mb-8 text-xl text-center md:text-2xl md:px-20 lg:px-36">
+                    <p class="text-lg text-center sm:text-xl md:text-2xl md:px-20 lg:px-36">
                         {{ $page->$lang['Achieve more by adopting automated workflows and networking informations between the various segments of your company'] }}
                     </p>
 
                     <a href="#cta"
-                        class="block w-fit mx-auto py-3 px-12 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-sm">
+                        class="block w-fit mx-auto py-3 px-6 bg-white-smoke text-bloodmyst-isle-700 hover:bg-firecracker-salmon hover:shadow-inner  hover:text-nero text-lg font-bold rounded-sm">
                         {{ $page->$lang['Request a service'] }}
                     </a>
                 </div>

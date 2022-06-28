@@ -4,7 +4,9 @@
     x-on:close-hamburger.window="visible = false" x-on:click.outside="visible = false"
     {{ $attributes->merge(['class' => 'fixed z-10 top-0 right-0 h-screen w-[69vw] p-4 flex flex-col gap-y-8 bg-white-smoke text-bloodmyst-isle']) }}>
 
-    <div class="flex justify-end">
+    <div class="flex justify-between">
+        <x-nav-langs :page="$page" lang="{{ $lang }}" class="flex justify-start" />
+
         <div x-data x-on:click="$dispatch('close-hamburger')" class="w-8 h-8">
             <x-icons.x />
         </div>
@@ -20,7 +22,5 @@
         @endforeach
 
     </div>
-
-    <x-nav-langs :page="$page" lang="{{ $lang }}" class="flex justify-start" />
 
 </aside>
