@@ -34,6 +34,12 @@ return [
         } else {
             return '/' . $current_lang . $url;
         }
+    },
+
+    '__' => function ($page, $text, $lang) {
+        if (isset($page->$lang[$text]))
+            return $page->$lang[$text];
+        return $text;
     }
 
 ];
