@@ -1,6 +1,6 @@
 # Elaborate-code
 
-This website is powered with **Jigsaw**, **Tailwind3** and **Alpine3**.
+This website/template is powered with **Jigsaw**, **Tailwind3** and **Alpine3**.
 
 ## Localization
 
@@ -10,7 +10,7 @@ But what seems as a huge inconvenient to me is the lack of localization support.
 
 ### The translation helper
 
-the `helper` is declared within `/helpers.php`. So whenever you need to use the helper make sure that the `$page` variable is accessible.
+the helper `__` is declared within `/helpers.php`. So whenever you need to use the helper make sure that the `$page` variable is accessible.
 
 Then use it like:
 
@@ -19,7 +19,7 @@ Then use it like:
 {{ $page->__('text', 'fr') }}
 ```
 
-The helpers looks for translations in the `/config.php` file using the **language code** as an associative array key and the **text** as a nested key.
+The helper looks for translations in the `/config.php` file using the **language code** as an associative array key and the **text** as a nested key.
 
 ```blade
 {{ $page->__('Orignal text which is by default in english', $lang) }}
@@ -62,7 +62,7 @@ Let's say that I'm working on the `about-us` page. I will:
 
 1. Create `source/_pages/about.blade.php`.
 2. Write all the page's code (see how later).
-3. Create `source/about.blade.php` and `source/fr/about.blade.php`, leave them empty, declare a variable `$lang` that equals `en` and `fr` respectively, then include `source/about.blade.php`.
+3. Create `source/about.blade.php` and `source/fr/about.blade.php`, declare a variable `$lang` that equals `en` and `fr` respectively, then include `source/about.blade.php`.
 
 #### examples
 
@@ -86,20 +86,20 @@ Let's say that I'm working on the `about-us` page. I will:
 
 Back to the `_pages` folder. the `source/_pages/about.blade.php` will be used to house the content of both `source/about.blade.php` and `source/fr/about.blade.php` and will be aware of the redering language through the `$lang` variable.
 
-First to make the text translatable use the following syntax
-
-```blade
-{{ $page->__('Orignal text which is by default in english', $lang) }}
-```
-
-Then go the `config.php` where you will see or set the `en` and `fr` which are keys for other nested arrays. The nested arrays holds the original text as a key and the translated text as value.
-
 ### Routing to translation
 
-The `lang_route` helper takes the **pages** language code, and another language code and returns an equivelent route.
+The `lang_route` helper takes the **pages** language, and another available language and returns an equivelent route.
 
 See how it is used within the `nav-langs` component.
-...
+
+### Other conveniences
+
+Dynamic content sources in `/config.php`
+
+1. `routes` populates the navigation bar and the hamburger menu with available pages names and URLs.
+2. `socials` populates the footer with social media links.
+3. `services` populates the landing page's services section.
+4. `projects` populates the landing page's projects section.
 
 ## Extra
 
