@@ -5,12 +5,12 @@
 
         <x-nav :page="$page" lang="{{ $lang }}" class="absolute top-0 w-full text-white" />
 
-        <section name="hero section" class="h-[90vh] hero-bg sm:hero-bg-alt">
+        <section name="hero section" class="h-[90vh] max-h-[800px] hero-bg sm:hero-bg-alt">
 
             {{-- center xy --}}
             <div class="container h-full mx-auto flex flex-col justify-center text-white">
 
-                <div class="p-6 flex flex-col gap-y-4 md:px-20 sm:px-8 xl:px-48">
+                <div class="py-8 px-4 flex flex-col gap-y-2 sm:gap-y-4 sm:px-8 md:px-20 xl:px-48">
 
                     <h1 class="text-4xl font-yeseva-one text-center md:text-5xl lg:6xl xl:text-7xl" lang="en"
                         translate="no">
