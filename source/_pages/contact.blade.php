@@ -59,7 +59,7 @@
                         class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-light rounded-sm"></textarea>
 
                     <button
-                        class="col-span-full py-4 px-2 bg-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white">
+                        class="col-span-full py-4 px-2 border-2 border-bloodmyst-isle-light text-bloodmyst-isle-dark font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white hover:border-firecracker-salmon">
                         {{ $page->$lang['Send'] }}
                     </button>
                 </div>

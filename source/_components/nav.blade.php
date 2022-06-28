@@ -2,7 +2,7 @@
 
 <nav {{ $attributes->merge(['class' => '']) }}>
 
-    <x-hamburger-menu :page="$page" lang="{{ $lang }}" class="" />
+    <x-hamburger-menu :page="$page" lang="{{ $lang }}" class="sm:hidden" />
 
     <div class="flex justify-between container mx-auto p-4 text-center">
 
@@ -14,6 +14,15 @@
         {{-- <x-nav-langs :page="$page" lang="{{ $lang }}" /> --}}
         <div x-data x-on:click="$dispatch('open-hamburger')" class="sm:hidden w-8 h-8">
             <x-icons.hamburger />
+        </div>
+
+        <div class="hidden sm:flex justify-end items-center gap-4">
+            @foreach ($page->routes as $route)
+                <a href="{{ $page->route($route->url, $lang) }}"
+                    class="block px-2 py-1 hover:text-bloodmyst-isle-light">
+                    {{ $route->name }}
+                </a>
+            @endforeach
         </div>
 
     </div>
