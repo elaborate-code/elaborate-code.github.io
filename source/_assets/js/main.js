@@ -1,7 +1,13 @@
 // window.navigator.userLanguage || window.navigator.language
 
+import Alpine from "alpinejs";
+
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
+window.Alpine = Alpine;
+
+Alpine.start();
 
 // Check if service worker is available.
 if ("serviceWorker" in navigator) {

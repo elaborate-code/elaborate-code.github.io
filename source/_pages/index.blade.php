@@ -1,11 +1,11 @@
 @extends('_layouts.main')
 
 @section('header')
-    <header class="h-screen">
+    <header>
 
         <x-nav :page="$page" lang="{{ $lang }}" class="absolute top-0 w-full text-white" />
 
-        <section name="hero section" class="h-screen hero-bg sm:hero-bg-alt">
+        <section name="hero section" class="h-[90vh] hero-bg sm:hero-bg-alt">
             <div class="container h-full mx-auto flex flex-col justify-center text-white">
 
                 <div class="px-8 md:px-20 xl:px-48">
