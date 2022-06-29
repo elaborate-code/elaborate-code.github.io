@@ -36,10 +36,4 @@ return [
         }
     },
 
-    '__' => function ($page, $text, $lang) {
-        if (isset($page->$lang[$text]))
-            return $page->$lang[$text];
-        return $text;
-    }
-
 ];
