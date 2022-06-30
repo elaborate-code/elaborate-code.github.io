@@ -8,23 +8,23 @@ class LangLoader
 {
 
     private string $projectRoot;
-    private array $localsList;
-    private array $localLoadersList = [];
+    private array $localesList;
+    private array $localeLoadersList = [];
 
     public function __construct()
     {
         $this->setProjectRoot(); // TODO turn to function project_root():string
-        $this->localsList = $this->listLocalFolders();
+        $this->localesList = $this->listLocaleFolders();
 
-        foreach ($this->localsList as $lang) {
-            $this->localLoadersList[$lang] = new LocalFolderLoader($this->projectRoot . "\\lang\\$lang", $lang);
+        foreach ($this->localesList as $lang) {
+            $this->localeLoadersList[$lang] = new LocaleFolderLoader($this->projectRoot . "\\lang\\$lang", $lang);
         }
     }
 
     /**
      * 
      */
-    private function listLocalFolders(): array
+    private function listLocaleFolders(): array
     {
         if (!realpath($this->projectRoot . '\\lang')) {
             trigger_error("No lang folder found", E_USER_NOTICE);
@@ -67,13 +67,13 @@ class LangLoader
     //          Setters and Getters
     /* ---------------------------------------------------------*/
 
-    public function getLocalsList(): array
+    public function getLocalesList(): array
     {
-        return $this->localsList;
+        return $this->localesList;
     }
 
-    public function getLocalLoadersList()
+    public function getLocaleLoadersList()
     {
-        return $this->localLoadersList;
+        return $this->localeLoadersList;
     }
 }

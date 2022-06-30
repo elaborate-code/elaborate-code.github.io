@@ -14,22 +14,21 @@ class LoadLocalization
     {
         $this->langLoader = new LangLoader($jigsaw);
 
-        foreach ($this->langLoader->getLocalLoadersList() as $lang => $localLoader) {
-            $localLoader->MergeTranslations($jigsaw);
+        foreach ($this->langLoader->getLocaleLoadersList() as $lang => $localeLoader) {
+            $localeLoader->MergeTranslations($jigsaw);
         };
 
         // register helper 
-        $jigsaw->setConfig('__', function ($page, $text, $lang = null) {
-            // TODO: define default in config
-            $default_lang = 'en';
+        $jigsaw->setConfig('__', function ($page, string $text, string|null $lang = null): string {
+            $default_lang = $page->default_lang ?? 'en';
 
             $path = $page->getPath();
 
             $lang = null;
 
             if (!$lang) {
-                // index page
                 if (!str_contains($path, '/')) {
+                    // index page
                     if (empty($path))
                         $lang = $default_lang;
                     else

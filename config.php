@@ -8,7 +8,7 @@ return [
     'description' => 'IT Services and IT Consulting',
     'collections' => [],
     // 
-    'site_langs' => ['en', 'fr'],
+    'default_lang' => 'en',
     // 
     'routes' => [
         ['url' => '/', 'name' => 'Home',],

@@ -4,7 +4,7 @@ namespace App\Services;
 
 use TightenCo\Jigsaw\Jigsaw;
 
-class LocalFolderLoader
+class LocaleFolderLoader
 {
     private string $absPath;
     private array $jsonsList;
@@ -17,13 +17,13 @@ class LocalFolderLoader
         $this->lang = $lang;
         $this->isMulti = $this->lang === "multi";
 
-        $this->jsonsList = $this->listLocalFolderJsons($this->absPath);
+        $this->jsonsList = $this->listLocaleFolderJsons($this->absPath);
     }
 
     /**
      * Scans folder content and excludes '.', '..' special files 
      */
-    private function listLocalFolderJsons(string $abs_path): array
+    private function listLocaleFolderJsons(string $abs_path): array
     {
         $jsons_list = [];
 
