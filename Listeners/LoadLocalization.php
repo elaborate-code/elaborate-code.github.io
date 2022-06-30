@@ -2,14 +2,21 @@
 
 namespace App\Listeners;
 
-use App\Services\LangFolderLoader;
+use App\Services\LangLoader;
 use TightenCo\Jigsaw\Jigsaw;
 
 class LoadLocalization
 {
+
+    private $langLoader;
+
     public function handle(Jigsaw $jigsaw)
     {
-        $this->langFolderLoader = new LangFolderLoader($jigsaw);
+        $this->langLoader = new LangLoader($jigsaw);
+
+        foreach ($this->langLoader->getLocalLoadersList() as $lang => $localLoader) {
+            $localLoader->MergeTranslations($jigsaw);
+        };
 
         // register helper 
         $jigsaw->setConfig('__', function ($page, $text, $lang) {

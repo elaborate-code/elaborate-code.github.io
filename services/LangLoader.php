@@ -4,20 +4,20 @@ namespace App\Services;
 
 use TightenCo\Jigsaw\Jigsaw;
 
-class LangFolderLoader
+class LangLoader
 {
 
     private string $projectRoot;
-    private array $localFoldersList;
+    private array $localsList;
     private array $localLoadersList = [];
 
-    public function __construct(Jigsaw $jigsaw)
+    public function __construct()
     {
-        $this->setProjectRoot();
-        $this->localFoldersList = $this->listLocalFolders();
+        $this->setProjectRoot(); // TODO turn to function project_root():string
+        $this->localsList = $this->listLocalFolders();
 
-        foreach ($this->localFoldersList as $lang) {
-            $this->localLoadersList[$lang] = new LocalFolderLoader($jigsaw, $this->projectRoot . "\\lang\\$lang");
+        foreach ($this->localsList as $lang) {
+            $this->localLoadersList[$lang] = new LocalFolderLoader($this->projectRoot . "\\lang\\$lang", $lang);
         }
     }
 
@@ -31,21 +31,14 @@ class LangFolderLoader
             return [];
         }
 
-        return $this->listFolderContent($this->getRealpath('\\lang'));
+        $scan_results = scandir($this->getRealpath('\\lang'));
+        // Exclude '.' and '..'
+        return array_splice($scan_results, 2);
     }
 
     /* ---------------------------------------------------------*/
     //          Helpers
     /* ---------------------------------------------------------*/
-
-    /**
-     * Scans folder content and excludes '.', '..' special files 
-     */
-    private function listFolderContent(string $abs_path): array
-    {
-        $scan_results = scandir($abs_path);
-        return array_splice($scan_results, 2);
-    }
 
     /**
      * @return string valid absolute path
@@ -74,8 +67,13 @@ class LangFolderLoader
     //          Setters and Getters
     /* ---------------------------------------------------------*/
 
-    public function getLocalFoldersList(): array
+    public function getLocalsList(): array
     {
-        return $this->localFoldersList;
+        return $this->localsList;
+    }
+
+    public function getLocalLoadersList()
+    {
+        return $this->localLoadersList;
     }
 }

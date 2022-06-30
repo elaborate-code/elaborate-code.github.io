@@ -10,20 +10,14 @@ class LocalFolderLoader
     private array $jsonsList;
     private bool $isMulti;
     private string $lang;
-    private array $parsedLocalization = [];
 
-    public function __construct(Jigsaw $jigsaw, string $abs_path)
+    public function __construct(string $abs_path, string $lang)
     {
-        $this->jigsaw = $jigsaw;
         $this->absPath = str_replace('/', '\\', $abs_path,);
-
-        $temp = explode('\\', $this->absPath);
-        $this->lang = end($temp);
-
+        $this->lang = $lang;
         $this->isMulti = $this->lang === "multi";
 
         $this->jsonsList = $this->listLocalFolderJsons($this->absPath);
-        $this->MergeTranslations();
     }
 
     /**
@@ -43,7 +37,7 @@ class LocalFolderLoader
         return $jsons_list;
     }
 
-    public function MergeTranslations()
+    public function MergeTranslations(Jigsaw $jigsaw)
     {
         if ($this->isMulti) {
             foreach ($this->jsonsList as $json) {
@@ -51,7 +45,7 @@ class LocalFolderLoader
                 $multi_translations = $this->decoded_json($json);
 
                 foreach ($multi_translations as $lang => $translations) {
-                    $this->pushTranslations($translations, $lang);
+                    $this->pushTranslations($jigsaw, $translations, $lang);
                 }
             }
         } else {
@@ -59,16 +53,16 @@ class LocalFolderLoader
 
                 $lang_translations = $this->decoded_json($json);
 
-                $this->pushTranslations($lang_translations, $this->lang);
+                $this->pushTranslations($jigsaw, $lang_translations, $this->lang);
             }
         }
     }
 
-    private function pushTranslations(array $translations, string $lang)
+    private function pushTranslations(Jigsaw $jigsaw, array $translations, string $lang)
     {
-        $site_localization = $this->jigsaw->getConfig($lang)?->toArray() ?? [];
+        $site_localization = $jigsaw->getConfig($lang)?->toArray() ?? [];
         $site_localization += $translations;
-        $this->jigsaw->setConfig($lang, $site_localization);
+        $jigsaw->setConfig($lang, $site_localization);
     }
 
     /* ---------------------------------------------------------*/
