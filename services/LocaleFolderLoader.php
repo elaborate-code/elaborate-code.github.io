@@ -7,9 +7,10 @@ use TightenCo\Jigsaw\Jigsaw;
 class LocaleFolderLoader
 {
     private string $absPath;
-    private array $jsonsList;
-    private bool $isMulti;
     private string $lang;
+    private bool $isMulti;
+
+    private array $jsonsList;
 
     public function __construct(string $abs_path, string $lang)
     {
@@ -28,6 +29,7 @@ class LocaleFolderLoader
         $jsons_list = [];
 
         $scan_results = scandir($abs_path);
+
         foreach ($scan_results as $json) {
             if ($this->is_not_json($json))
                 continue;
@@ -37,6 +39,13 @@ class LocaleFolderLoader
         return $jsons_list;
     }
 
+    /* =========================================================*/
+
+    /**
+     * - Iterates throught the locale folder JSONs' paths list
+     * - Decodes each JSON
+     * - Adds the newly discovered translations to the site's translations
+     */
     public function MergeTranslations(Jigsaw $jigsaw)
     {
         if ($this->isMulti) {
@@ -60,9 +69,11 @@ class LocaleFolderLoader
 
     private function pushTranslations(Jigsaw $jigsaw, array $translations, string $lang)
     {
-        $site_localization = $jigsaw->getConfig($lang)?->toArray() ?? [];
-        $site_localization += $translations;
-        $jigsaw->setConfig($lang, $site_localization);
+        $jigsaw->setConfig(
+            $lang,
+            $jigsaw->getConfig($lang)?->toArray() ?? []
+                + $translations
+        );
     }
 
     /* ---------------------------------------------------------*/

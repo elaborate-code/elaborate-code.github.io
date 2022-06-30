@@ -6,25 +6,24 @@ use TightenCo\Jigsaw\Jigsaw;
 
 class LangLoader
 {
-
     private string $projectRoot;
     private array $localesList;
-    private array $localeLoadersList = [];
+    private array $localesLoadersList = [];
 
     public function __construct()
     {
         $this->setProjectRoot(); // TODO turn to function project_root():string
-        $this->localesList = $this->listLocaleFolders();
+        $this->localesList = $this->listLocalesFolders();
 
         foreach ($this->localesList as $lang) {
-            $this->localeLoadersList[$lang] = new LocaleFolderLoader($this->projectRoot . "\\lang\\$lang", $lang);
+            $this->localesLoadersList[$lang] = new LocaleFolderLoader($this->projectRoot . "\\lang\\$lang", $lang);
         }
     }
 
     /**
      * 
      */
-    private function listLocaleFolders(): array
+    private function listLocalesFolders(): array
     {
         if (!realpath($this->projectRoot . '\\lang')) {
             trigger_error("No lang folder found", E_USER_NOTICE);
@@ -41,6 +40,15 @@ class LangLoader
     /* ---------------------------------------------------------*/
 
     /**
+     * Assume that the vendor folder is in the project root
+     */
+    private function setProjectRoot(): void
+    {
+        $reflection = new \ReflectionClass(\Composer\Autoload\ClassLoader::class);
+        $this->projectRoot = realpath(dirname($reflection->getFileName(), 3));
+    }
+
+    /**
      * @return string valid absolute path
      * @throws \Exception if path is invalid
      */
@@ -54,15 +62,6 @@ class LangLoader
         return $realpath;
     }
 
-    /**
-     * Assume that the vendor folder is in the project root
-     */
-    private function setProjectRoot(): void
-    {
-        $reflection = new \ReflectionClass(\Composer\Autoload\ClassLoader::class);
-        $this->projectRoot = realpath(dirname($reflection->getFileName(), 3));
-    }
-
     /* ---------------------------------------------------------*/
     //          Setters and Getters
     /* ---------------------------------------------------------*/
@@ -72,8 +71,8 @@ class LangLoader
         return $this->localesList;
     }
 
-    public function getLocaleLoadersList()
+    public function getLocalesLoadersList()
     {
-        return $this->localeLoadersList;
+        return $this->localesLoadersList;
     }
 }
