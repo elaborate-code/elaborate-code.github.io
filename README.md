@@ -15,14 +15,14 @@ the helper `__` is declared within `/helpers.php`. So whenever you need to use t
 Then use it like:
 
 ```blade
-{{ $page->__('text', 'en') }}
-{{ $page->__('text', 'fr') }}
+{{ $page->__('text') }}
+{{ $page->__('text') }}
 ```
 
 The helper looks for translations in the `/config.php` file using the **language code** as an associative array key and the **text** as a nested key.
 
 ```blade
-{{ $page->__('Orignal text which is by default in english', $lang) }}
+{{ $page->__('Orignal text which is by default in english') }}
 ```
 
 ```php
