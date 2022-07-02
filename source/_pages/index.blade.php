@@ -103,7 +103,7 @@
             </form>
 
             <a class="block mt-4 cursor-pointer text-firecracker-salmon-100 text-sm text-center underline"
-                href="{{ $page->route('/contact', $page->currentPathLang()) }}">
+                href="{{ $page->lang_route('/contact') }}">
                 {{ $page->__('Or send us a detailed message') }}
             </a>
         </section>
