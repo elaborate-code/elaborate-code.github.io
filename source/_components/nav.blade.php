@@ -1,4 +1,4 @@
-@props(['page', 'lang'])
+@props(['page', 'lang' => $page->currentPathLang()])
 
 <nav {{ $attributes->merge(['class' => '']) }}>
 

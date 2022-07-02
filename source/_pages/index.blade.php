@@ -3,7 +3,7 @@
 @section('header')
     <header>
 
-        <x-nav :page="$page" lang="{{ $lang }}" class="absolute top-0 w-full text-white" />
+        <x-nav :page="$page" class="absolute top-0 w-full text-white" />
 
         <section name="hero section" class="h-[90vh] max-h-[800px] hero-bg sm:hero-bg-alt">
 
@@ -103,7 +103,7 @@
             </form>
 
             <a class="block mt-4 cursor-pointer text-firecracker-salmon-100 text-sm text-center underline"
-                href="{{ $page->route('/contact', $lang) }}">
+                href="{{ $page->route('/contact', $page->currentPathLang()) }}">
                 {{ $page->__('Or send us a detailed message') }}
             </a>
         </section>

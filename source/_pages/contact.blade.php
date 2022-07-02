@@ -2,7 +2,7 @@
 
 @section('header')
     <header class="">
-        <x-nav :page="$page" lang="{{ $lang }}" class="bg-frozen-blue-900 text-white" />
+        <x-nav :page="$page" class="bg-frozen-blue-900 text-white" />
 
         <section class="bg-gray-200 contact-bg">
             <div class="container aspect-video max-h-[600px] mx-auto flex justify-center sm:justify-end">
