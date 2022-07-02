@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5339c88fde24492ad495808212aece9b",
+    "content-hash": "f495bfbbde0a8360a6061f6c1fb7352e",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -99,16 +99,16 @@
         },
         {
             "name": "elaborate-code/jigsaw-localization",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elaborate-code/jigsaw-localization.git",
-                "reference": "aaeb94ec8fbd61352dbacd6222f56a7be5912329"
+                "reference": "ab933786aa7724c8429ed5ce56d7151da83efd6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elaborate-code/jigsaw-localization/zipball/aaeb94ec8fbd61352dbacd6222f56a7be5912329",
-                "reference": "aaeb94ec8fbd61352dbacd6222f56a7be5912329",
+                "url": "https://api.github.com/repos/elaborate-code/jigsaw-localization/zipball/ab933786aa7724c8429ed5ce56d7151da83efd6d",
+                "reference": "ab933786aa7724c8429ed5ce56d7151da83efd6d",
                 "shasum": ""
             },
             "type": "library",
@@ -130,9 +130,9 @@
             "description": "Brings localization feature to \"tightenco/jigsaw\" using JSON files",
             "support": {
                 "issues": "https://github.com/elaborate-code/jigsaw-localization/issues",
-                "source": "https://github.com/elaborate-code/jigsaw-localization/tree/0.0.1-stable"
+                "source": "https://github.com/elaborate-code/jigsaw-localization/tree/0.0.2"
             },
-            "time": "2022-06-30T19:15:28+00:00"
+            "time": "2022-07-02T13:45:52+00:00"
         },
         {
             "name": "erusev/parsedown",

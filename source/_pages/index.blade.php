@@ -21,7 +21,7 @@
                     <div class="w-32 h-1 mx-auto bg-frozen-blue-100 rounded-full"></div>
 
                     <p class="text-lg text-center sm:text-xl md:text-2xl md:px-20 lg:px-36">
-                        {{ $page->__('Achieve more by adopting automated workflows and networking informations between the various segments of your company') }}
+                        {{ $page->__('Achieve more by adopting automated workflows and networking information between the various segments of your company') }}
                     </p>
 
                     <a href="#cta"
