@@ -2,5 +2,5 @@
 
 return [
     'production' => true,
-    'baseUrl' => 'https://elaboratecode.com'
+    'baseUrl' => 'https://elaboratecode.com',
 ];

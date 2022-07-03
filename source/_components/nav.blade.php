@@ -1,4 +1,4 @@
-@props(['page', 'lang' => $page->currentPathLang()])
+@props(['page', 'lang' => $page->current_path_lang()])
 
 <nav {{ $attributes->merge(['class' => '']) }}>
 
@@ -6,12 +6,11 @@
 
     <div class="flex justify-between container mx-auto p-4 text-center">
 
-        <a href="{{ $page->lang_route('/') }}" class="flex items-center gap-2">
+        <a href="{{ $page->prepend_base_url('/') }}" class="flex items-center gap-2">
             <x-logo class="h-9 w-fit mx-auto" />
             <p class="w-maxtext-left text-sm text-left sm:text-base md:text-lg" translate="no"> {{ $page->name }} </p>
         </a>
 
-        {{-- <x-nav-langs :page="$page" lang="{{ $lang }}" /> --}}
         <div x-data x-on:click="$dispatch('open-hamburger')" class="sm:hidden w-8 h-8">
             <x-icons.hamburger />
         </div>

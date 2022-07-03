@@ -9,6 +9,7 @@ return [
     'collections' => [],
     // 
     'default_lang' => 'en',
+    'site_langs' => ['en', 'fr'],
     // 
     'routes' => [
         ['url' => '/', 'name' => 'Home',],
