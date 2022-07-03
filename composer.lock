@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91f9b50b6ddabeb49fb019e5c732dadc",
+    "content-hash": "eb283f18e20f03dd8fb51d3d9b8331b1",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -96,6 +96,43 @@
                 }
             ],
             "time": "2021-10-22T20:16:43+00:00"
+        },
+        {
+            "name": "elaborate-code/jigsaw-localization",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elaborate-code/jigsaw-localization.git",
+                "reference": "bd121994e0089b1f956a3c517cb0400454af86e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elaborate-code/jigsaw-localization/zipball/bd121994e0089b1f956a3c517cb0400454af86e1",
+                "reference": "bd121994e0089b1f956a3c517cb0400454af86e1",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ElaborateCode\\JigsawLocalization\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Ilies BOUDOUMA",
+                    "email": "medilies.contact@gmail.com"
+                }
+            ],
+            "description": "Brings localization feature to \"tightenco/jigsaw\" using JSON files",
+            "support": {
+                "issues": "https://github.com/elaborate-code/jigsaw-localization/issues",
+                "source": "https://github.com/elaborate-code/jigsaw-localization/tree/0.0.4"
+            },
+            "time": "2022-07-03T09:18:29+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -2634,5 +2671,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

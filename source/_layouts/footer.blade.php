@@ -108,7 +108,7 @@
             </p>
         </div>
 
-        <x-nav-langs :page="$page" lang="{{ $lang }}" class="basis-1/2 justify-end " />
+        <x-nav-langs :page="$page" class="basis-1/2 justify-end " />
 
     </div>
 

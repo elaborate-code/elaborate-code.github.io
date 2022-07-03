@@ -3,7 +3,7 @@
 @section('header')
     <header>
 
-        <x-nav :page="$page" lang="{{ $lang }}" class="absolute top-0 w-full text-white" />
+        <x-nav :page="$page" class="absolute top-0 w-full text-white" />
 
         <section name="hero section" class="h-[90vh] max-h-[800px] hero-bg sm:hero-bg-alt">
 
@@ -21,7 +21,7 @@
                     <div class="w-32 h-1 mx-auto bg-frozen-blue-100 rounded-full"></div>
 
                     <p class="text-lg text-center sm:text-xl md:text-2xl md:px-20 lg:px-36">
-                        {{ $page->__('Achieve more by adopting automated workflows and networking informations between the various segments of your company') }}
+                        {{ $page->__('Achieve more by adopting automated workflows and networking information between the various segments of your company') }}
                     </p>
 
                     <a href="#cta"
@@ -62,7 +62,8 @@
 
                 @foreach ($page->services as $service)
                     <x-cards.service service-title="{{ $page->__($service->title) }}"
-                        service-desc="{{ $page->__($service->desc) }}" service-img="{{ $service->img }}"
+                        service-desc="{{ $page->__($service->desc) }}"
+                        service-img="{{ $page->prepend_base_url($service->img) }}"
                         service-img-alt="{{ $service->imgAlt }}" />
                 @endforeach
             </div>
@@ -103,7 +104,7 @@
             </form>
 
             <a class="block mt-4 cursor-pointer text-firecracker-salmon-100 text-sm text-center underline"
-                href="{{ $page->route('/contact', $lang) }}">
+                href="{{ $page->lang_route('/contact') }}">
                 {{ $page->__('Or send us a detailed message') }}
             </a>
         </section>
@@ -118,7 +119,8 @@
 
                 @foreach ($page->projects as $project)
                     <x-cards.project project-name="{{ $project->name }}"
-                        project-desc="{{ $page->__($project->desc) }}" project-img="{{ $project->img }}"
+                        project-desc="{{ $page->__($project->desc) }}"
+                        project-img="{{ $page->prepend_base_url($project->img) }}"
                         project-href="{{ $project->href }}" class="project-card-frozen-blue-theme" />
                 @endforeach
             </div>

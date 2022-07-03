@@ -2,12 +2,13 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://elaboratecode.com/',
+    'baseUrl' => 'http://localhost:3000',
     'name' => 'Elaborate Code',
     'title' => 'Elaborate Code',
     'description' => 'IT Services and IT Consulting',
     'collections' => [],
     // 
+    'default_lang' => 'en',
     'site_langs' => ['en', 'fr'],
     // 
     'routes' => [
@@ -29,7 +30,7 @@ return [
     'services' => [
         [
             'title' => 'Software development',
-            'desc' => 'We believe we got top notch programmers  that are ready to realise your ideas and eradicate points of failure within your company',
+            'desc' => 'We believe we got top notch programmers  that are ready to realize your ideas and eradicate points of failure within your company',
             'img' => '/assets/images/group-young-business-people-working-office-min.jpg',
             'imgAlt' => 'group young business people working office',
         ],
@@ -41,7 +42,7 @@ return [
         ],
         [
             'title' => 'Network engineering',
-            'desc' => 'We know very well that the network is the foundation of digitalisation and you can trust us to manage its various aspects.',
+            'desc' => 'We know very well that the network is the foundation of digitalization and you can trust us to manage its various aspects.',
             'img' => '/assets/images/young-man-engineer-making-program-analyses-min.jpg',
             'imgAlt' => 'young man engineer making program analyses',
         ],

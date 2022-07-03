@@ -1,6 +1,6 @@
 <?php
 
-use App\Listeners\LoadLocalization;
+use ElaborateCode\JigsawLocalization\LoadLocalization;
 use TightenCo\Jigsaw\Jigsaw;
 
 /** @var $container \Illuminate\Container\Container */
