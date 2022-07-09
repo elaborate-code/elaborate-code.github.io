@@ -17,6 +17,7 @@
     "dependencies": {
         "alpinejs": "^3.10.2",
         "fast-glob": "^3.2.11",
+        "kute.js": "^2.2.4",
         "lazysizes": "^5.3.2",
         "particles.js": "^2.0.0"
     }

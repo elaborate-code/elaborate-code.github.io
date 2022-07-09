@@ -23,3 +23,5 @@ if ("serviceWorker" in navigator) {
             console.log("SW registration failed with error:", e);
         });
 }
+
+require("./hero_blob");

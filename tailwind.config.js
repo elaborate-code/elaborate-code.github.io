@@ -16,6 +16,7 @@ module.exports = {
                     100: "#fccece",
                     200: "#f99e9e",
                     300: "#f66e6e",
+                    400: "#f33e3e",
                     DEFAULT: "#F22929",
                     600: "#f00e0e",
                     700: "#c00b0b",
@@ -44,6 +45,24 @@ module.exports = {
                 "hero-image": "url('/assets/images/hero-bg.jpg')",
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
             },
+            animation: {
+                "fade-in": "FadeIn 2s ease-in-out",
+                "bounce-alt": "bounceAlt 4s ease-in-out infinite",
+            },
+            keyframes: () => ({
+                FadeIn: {
+                    "0%": { opacity: 0 },
+                    "100%": { opacity: 1 },
+                },
+                bounceAlt: {
+                    "0%, 100%": {
+                        transform: "translateY(-1%)",
+                    },
+                    "50%": {
+                        transform: "translateY(0)",
+                    },
+                },
+            }),
         },
     },
     variants: {

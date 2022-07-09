@@ -6,6 +6,40 @@
     display: none !important;
 }
 
+.custom-shape-divider-top-1657217003 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1657217003 svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 83px;
+}
+
+/*  */
+.custom-shape-divider-bottom-1657220297 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1657220297 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 48px;
+    transform: rotateY(180deg);
+}
+
 @layer components {
     /* ! URL issues */
     .hero-bg {
