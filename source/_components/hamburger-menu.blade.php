@@ -1,4 +1,4 @@
-@props(['page', 'lang' => $page->current_path_lang()])
+@props(['page', 'lang' => current_path_locale($page)])
 
 <aside x-data="{ visible: false }" x-cloak x-show="visible" x-transition x-on:open-hamburger.window="visible = true"
     x-on:close-hamburger.window="visible = false" x-on:click.outside="visible = false"
@@ -15,7 +15,7 @@
     <div class="flex-1 flex flex-col gap-4">
 
         @foreach ($page->routes as $route)
-            <a href="{{ $page->lang_url($route->url) }}"
+            <a href="{{ locale_url($page, $route->url) }}"
                 class="block px-4 py-2 border border-bloodmyst-isle rounded-md hover:bg-bloodmyst-isle hover:text-white">
                 {{ $route->name }}
             </a>

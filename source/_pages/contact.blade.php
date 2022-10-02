@@ -12,7 +12,7 @@
                         <div class="hidden w-2 bg-bloodmyst-isle sm:block"></div>
                         <h1
                             class="text-bloodmyst-isle text-5xl font-yeseva-one text-center font-bold sm:text-left sm:text-6xl md:text-7xl lg:text-8xl">
-                            {{ $page->__('Contact us') }}
+                            {{ __($page, 'Contact us') }}
                         </h1>
                     </div>
                 </div>
@@ -26,11 +26,11 @@
         <div class="flex flex-col gap-8 container mx-auto p-4">
 
             <h2 class="text-bloodmyst-isle text-center text-4xl font-yeseva-one">
-                {{ $page->__('Let\'s talk') }}
+                {{ __($page, 'Let\'s talk') }}
             </h2>
 
             <p class="text-center text-frozen-blue-900">
-                {{ $page->__('Let us know how we can help and we\'ll get in touch with you shortly') }}
+                {{ __($page, 'Let us know how we can help and we\'ll get in touch with you shortly') }}
             </p>
 
             <form action="https://formsubmit.co/ee12d2b34596e814d47702339907bd3e" method="POST">
@@ -45,14 +45,14 @@
 
                 <div class="w-full grid grid-cols-4 gap-4 text-lg font-merriweather lg:w-2/3 xl:w-1/2 mx-auto">
 
-                    <input type="text" name="full_name" placeholder="{{ $page->__('Full name') }}" required
+                    <input type="text" name="full_name" placeholder="{{ __($page, 'Full name') }}" required
                         class="col-span-full
                         py-4 px-2 outline-none border-2 border-firecracker-salmon-100 rounded-sm">
 
                     <input type="email" name="email" placeholder="E-mail" required
                         class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-100 rounded-sm md:col-span-2">
 
-                    <input type="tel" name="phone" placeholder="{{ $page->__('Phone number') }}"
+                    <input type="tel" name="phone" placeholder="{{ __($page, 'Phone number') }}"
                         class="col-span-full py-4 px-2 outline-none border-2 border-firecracker-salmon-100 rounded-sm md:col-span-2">
 
                     <textarea name="message" aria-label="Message content" rows="7"
@@ -60,7 +60,7 @@
 
                     <button
                         class="col-span-full py-4 px-2 border-2 border-bloodmyst-isle-100 text-bloodmyst-isle-900 font-bold text-center rounded-sm shadow-sm hover:bg-firecracker-salmon hover:shadow-white hover:border-firecracker-salmon">
-                        {{ $page->__('Send') }}
+                        {{ __($page, 'Send') }}
                     </button>
                 </div>
             </form>
