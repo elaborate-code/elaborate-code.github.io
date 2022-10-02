@@ -14,14 +14,13 @@
 
                     <h1 class="text-4xl font-yeseva-one text-center md:text-5xl lg:6xl xl:text-7xl" lang="en"
                         translate="no">
-                        The ultimate <span class="text-bloodmyst-isle animate-pulse"> digitalisation </span> services
-                        For the ultimate productivity
+                        Web apps that improve <span class="text-bloodmyst-isle animate-pulse"> business efficiency</span>.
                     </h1>
 
                     <div class="w-32 h-1 mx-auto bg-frozen-blue-100 rounded-full"></div>
 
                     <p class="text-lg text-center sm:text-xl md:text-2xl md:px-20 lg:px-36">
-                        {{ __($page, 'Achieve more by adopting automated workflows and networking information between the various segments of your company') }}
+                        {{ __($page, 'We hand-code websites and web applications that help businesses become more productive.') }}
                     </p>
 
                     <a href="#cta"

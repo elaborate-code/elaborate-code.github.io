@@ -38,7 +38,7 @@
                 <input type="hidden" name="_subject" value="Elaborate Code service request">
                 <input type="hidden" name="_template" value="table">
 
-                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_captcha" value="true">
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_next" value="{{ $page->getUrl() }}">
                 {{-- <input type="hidden" name="_autoresponse" value="your custom message"> --}}
